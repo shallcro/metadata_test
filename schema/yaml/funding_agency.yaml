@@ -1,0 +1,10 @@
+---
+  $schema: https://json-schema.org/draft-07/schema#
+  $id: https://schemas.icpsr.umich.edu/schema/yaml/funding_agency?version=v1
+  usageNotes: |
+    The following steps should be taken to make sure that the entry of funding agency names conforms to best practices within ICPSR and the broader academic community:
+
+      1. If the funding agency has sponsored data with ICPSR in the past, conform to previously usage within the ICPSR catalog.
+      2. If the organization has not previously sponsored data but is in the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004), use the form of the name listed there.
+      3. If the funding agency is not available in the ICPSR Organizational Names Authority List, consult the [Virtual International Authority File](https://viaf.org/) (VIAF). 
+      4. If the funding agency does not have a VIAF record, consult another authoritative source (such as an organizational website) to determine the appropriate name.
