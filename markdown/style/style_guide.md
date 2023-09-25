@@ -1,4 +1,4 @@
-# ICPSR Curated Study Metadata Style Guide
+# Style Guide for ICPSR Curated Study Metadata Creation
 
 **Completeness:** Regardless of whether a metadata element is technically required, curators should strive to include information for as many elements as possible. While PI-provided information often informs the metadata, curators should attempt to produce complete metadata text whenever possible (especially for elements such as "Description of Variables" or "Purpose of the Study" where the curators’ knowledge should be sufficient without PI-provided text). 
 
