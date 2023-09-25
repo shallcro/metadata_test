@@ -197,294 +197,50 @@
               
                 <h1 id="icpsr-curated-study-metadata-schema">ICPSR Curated Study Metadata Schema</h1>
 <p>Last updated: September 25, 2023</p>
-<p>This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to inform depositors of necessary information to improve the discoverability of their studies and at the same time assist ICPSR staff with metadata entry. A Style Guide is also available, containing guidelines that apply to all fields. Please refer to the JSON Schema version(ADD GITHUB URL) of this document for a machine-readable instance.</p>
+<p>This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.</p>
 <h2 id="metadata-elements-overview">Metadata Elements: Overview</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Required?</th>
-<th>Repeatable?</th>
-<th>Accepted Values</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#version">Version</a></td>
-<td>Yes</td>
-<td>No</td>
-<td>Number</td>
-<td>The current version number for the data collection.</td>
-</tr>
-<tr>
-<td><a href="#version_date">Version Date</a></td>
-<td>Yes</td>
-<td>No</td>
-<td>Text</td>
-<td>The date on which the current version of the data collection was released by ICPSR.</td>
-</tr>
-<tr>
-<td><a href="#original_release_date">Original Release Date</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The date on which the data collection was originally released by ICPSR.</td>
-</tr>
-<tr>
-<td><a href="#title">Title</a></td>
-<td>Yes</td>
-<td>No</td>
-<td>Text</td>
-<td>The authoritative title of the data collection. A full title should include a descriptive string that captures what the data collection contains as well as the geographic scope of and the time period covered by the data collection.</td>
-</tr>
-<tr>
-<td><a href="#alternate_title">Alternate Title</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>The alternate name(s) or acronym(s) by which a data collection may be commonly referred.</td>
-</tr>
-<tr>
-<td><a href="#link_title">Link Title</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The title of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.</td>
-</tr>
-<tr>
-<td><a href="#link_url">Link Url</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The URL of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.</td>
-</tr>
-<tr>
-<td><a href="#principal_investigator">Principal Investigator</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>The entity primarily responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.</td>
-</tr>
-<tr>
-<td><a href="#citation">Citation</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The established bibliographic reference for the data collection.</td>
-</tr>
-<tr>
-<td><a href="#distributor">Distributor</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>The organization(s) responsible for distributing the data collection. Values include both the name and the location of the Distributor(s).</td>
-</tr>
-<tr>
-<td><a href="#doi">Digital Object Identifier (DOI)</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The registered persistent digital object identifier (DOI) associated with the data collection.</td>
-</tr>
-<tr>
-<td><a href="#funding_source">Funding Source</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>Information on the data collection's funding.</td>
-</tr>
-<tr>
-<td><a href="#external_source_ID">External Source ID</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>A string that allows the data collection to be associated with a unique identifier supplied by the depositor.</td>
-</tr>
-<tr>
-<td><a href="#summary">Summary</a></td>
-<td>Yes</td>
-<td>No</td>
-<td>Text</td>
-<td>A full description or abstract of the data collection's subject matter or intellectual content. The main goal of the Summary is to give the user a clear sense of what the collection is about, including the purpose of the collection, the major topics covered, and what questions the principal investigators attempted to answer when they conducted the data collection.</td>
-</tr>
-<tr>
-<td><a href="#subject_term">Subject Term</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Text</td>
-<td>A controlled list of terms used for indexing purposes to indicate what topics a data collection reflects. Subject Terms serve to increase the collection's discoverability by topic.</td>
-</tr>
-<tr>
-<td><a href="#geographic_coverage_area">Geographic Coverage Area</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Text</td>
-<td>The preferred and/or current names of geographic and geopolitical entities.</td>
-</tr>
-<tr>
-<td><a href="#time_period">Time Period</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>Information about the time period(s) to which the data refer. The time period should focus on the dates the data are actually about, regardless of when the data were collected.</td>
-</tr>
-<tr>
-<td><a href="#collection_date">Collection Date</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>Information on the date(s) when the data were physically collected.</td>
-</tr>
-<tr>
-<td><a href="#universe">Universe</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.</td>
-</tr>
-<tr>
-<td><a href="#data_type">Data Type</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>Information describing the kind of data included in the file.</td>
-</tr>
-<tr>
-<td><a href="#collection_note">Collection Note</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>A description of technical details and other characteristics of the data collection (such as unique authoring, discrepancies, dissemination, or processing information) that cannot be recorded in other metadata elements but constitutes important information for the secondary data user.</td>
-</tr>
-<tr>
-<td><a href="#study_purpose">Study Purpose</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>Describes the concept of the data collection in detail.</td>
-</tr>
-<tr>
-<td><a href="#study_design">Study Design</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>Describes the procedures the researchers used to contact subjects and/or to collect the data.</td>
-</tr>
-<tr>
-<td><a href="#variable_description">Variable Description</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>Significant variables that are present in the data files distributed for public release, particularly demographic variables.</td>
-</tr>
-<tr>
-<td><a href="#sampling">Sampling</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).</td>
-</tr>
-<tr>
-<td><a href="#time_method">Time Method</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>The time dimension in which the data were collected and framed.</td>
-</tr>
-<tr>
-<td><a href="#data_source">Data Source</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>The source(s) of the data collection, when that source is external to the data collection and can be independently cited.</td>
-</tr>
-<tr>
-<td><a href="#collection_mode">Collection Mode</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>The method(s) used to collect the data.</td>
-</tr>
-<tr>
-<td><a href="#extent_of_processing">Extent of Processing</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>Describes processing activities and checks performed on data collections by ICPSR curation staff.</td>
-</tr>
-<tr>
-<td><a href="#weight">Weight</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>A description of the criteria for using weights in the analysis of the data collection.</td>
-</tr>
-<tr>
-<td><a href="#response_rates">Response Rates</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The percentage of respondents in the sample who participated in the data collection.</td>
-</tr>
-<tr>
-<td><a href="#scale">Scale</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>Any commonly known scale used to collect data for the data collection (e.g., psychological scales such as MMPI and CPI, or occupational scales such as the Census Occupational Codes).</td>
-</tr>
-<tr>
-<td><a href="#unit_of_observation">Unit of Observation</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>Describes the entity being analyzed in the data collection; otherwise known as analysis unit.</td>
-</tr>
-<tr>
-<td><a href="#geographic_unit">Geographic Unit</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>The smallest geographic unit used in the dataset.</td>
-</tr>
-<tr>
-<td><a href="#restrictions">Restrictions</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>Information regarding any limitations on use or restrictions on access to the file(s).</td>
-</tr>
-<tr>
-<td><a href="#changes_to_collection">Changes to Collection</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>A summary description of changes that have been made to the data collection since its last release.</td>
-</tr>
-<tr>
-<td><a href="#series">Series</a></td>
-<td>No</td>
-<td>No</td>
-<td>Text</td>
-<td>An ICPSR series is a named collection of related studies.</td>
-</tr>
-<tr>
-<td><a href="#classification">Classification</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Text</td>
-<td>ICPSR classifications address topics broadly, and are meant to be a good starting point for exploring the collection.</td>
-</tr>
-<tr>
-<td><a href="#filesets">Filesets</a></td>
-<td>No</td>
-<td>Yes</td>
-<td>Multi-part; see subfields</td>
-<td>Identifies the grouping of files in a data collection. Every ICPSR data collection with at least one file must have at least one defined Fileset.</td>
-</tr>
-</tbody>
-</table>
+<p>| Property                                               | Required? | Repeatable? | Accepted Values           | Description                                                                                                                                                                                                                                                                                                                                                                    |
+For a machine-actionable copy of this information, please see the <a href="https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json">JSON Schema version</a></p>
+<p>| ------------------------------------------------------ | --------- | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <a href="#version">Version</a>                                   | Yes       | No          | Number                    | The current version number for the data collection.                                                                                                                                                                                                                                                                                                                            |
+| <a href="#version_date">Version Date</a>                         | Yes       | No          | Text                      | The date on which the current version of the data collection was released by ICPSR.                                                                                                                                                                                                                                                                                            |
+| <a href="#original_release_date">Original Release Date</a>       | No        | No          | Text                      | The date on which the data collection was originally released by ICPSR.                                                                                                                                                                                                                                                                                                        |
+| <a href="#title">Title</a>                                       | Yes       | No          | Text                      | The authoritative title of the data collection. A full title should include a descriptive string that captures what the data collection contains as well as the geographic scope of and the time period covered by the data collection.                                                                                                                                        |
+| <a href="#alternate_title">Alternate Title</a>                   | No        | Yes         | Text                      | The alternate name(s) or acronym(s) by which a data collection may be commonly referred.                                                                                                                                                                                                                                                                                       |
+| <a href="#link_title">Link Title</a>                             | No        | No          | Text                      | The title of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.                                                                                                                                                                                                                              |
+| <a href="#link_url">Link Url</a>                                 | No        | No          | Text                      | The URL of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.                                                                                                                                                                                                                                |
+| <a href="#principal_investigator">Principal Investigator</a>     | Yes       | Yes         | Multi-part; see subfields           | The entity primarily responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.                                                                                                                                                                             |
+| <a href="#citation">Citation</a>                                 | No        | No          | Text                      | The established bibliographic reference for the data collection.                                                                                                                                                                                                                                                                                                               |
+| <a href="#distributor">Distributor</a>                           | Yes       | Yes         | Multi-part; see subfields           | The organization(s) responsible for distributing the data collection. Values include both the name and the location of the Distributor(s).                                                                                                                                                                                                                                     |
+| <a href="#doi">Digital Object Identifier (DOI)</a>                                           | No        | No          | Text                      | The registered persistent digital object identifier (DOI) associated with the data collection.                                                                                                                                                                                                                                                                                 |
+| <a href="#funding_source">Funding Source</a>                     | No        | Yes         | Multi-part; see subfields           | Information on the data collection's funding.                                                                                                                                                                                                                                                                                                                                  |
+| <a href="#external_source_ID">External Source ID</a>             | No        | Yes         | Text                      | A string that allows the data collection to be associated with a unique identifier supplied by the depositor.                                                                                                                                                                                                                                                                  |
+| <a href="#summary">Summary</a>                                   | Yes       | No          | Text                      | A full description or abstract of the data collection's subject matter or intellectual content. The main goal of the Summary is to give the user a clear sense of what the collection is about, including the purpose of the collection, the major topics covered, and what questions the principal investigators attempted to answer when they conducted the data collection. |
+| <a href="#subject_term">Subject Term</a>                         | Yes       | Yes         | Text                      | A controlled list of terms used for indexing purposes to indicate what topics a data collection reflects. Subject Terms serve to increase the collection's discoverability by topic.                                                                                                                                                                                           |
+| <a href="#geographic_coverage_area">Geographic Coverage Area</a> | Yes       | Yes         | Text                      | The preferred and/or current names of geographic and geopolitical entities.                                                                                                                                                                                                                                                                                                    |
+| <a href="#time_period">Time Period</a>                           | Yes       | Yes         | Multi-part; see subfields           | Information about the time period(s) to which the data refer. The time period should focus on the dates the data are actually about, regardless of when the data were collected.                                                                                                                                                                                               |
+| <a href="#collection_date">Collection Date</a>                   | No        | Yes         | Multi-part; see subfields           | Information on the date(s) when the data were physically collected.                                                                                                                                                                                                                                                                                                            |
+| <a href="#universe">Universe</a>                                 | No        | No          | Text                      | The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.                                                                                                                                                                                                                                      |
+| <a href="#data_type">Data Type</a>                               | No        | Yes         | Text                      | Information describing the kind of data included in the file.                                                                                                                                                                                                                                                                                                                  |
+| <a href="#collection_note">Collection Note</a>                   | No        | Yes         | Text                      | A description of technical details and other characteristics of the data collection (such as unique authoring, discrepancies, dissemination, or processing information) that cannot be recorded in other metadata elements but constitutes important information for the secondary data user.                                                                                  |
+| <a href="#study_purpose">Study Purpose</a>                       | No        | No          | Text                      | Describes the concept of the data collection in detail.                                                                                                                                                                                                                                                                                                                        |
+| <a href="#study_design">Study Design</a>                         | No        | No          | Text                      | Describes the procedures the researchers used to contact subjects and/or to collect the data.                                                                                                                                                                                                                                                                                  |
+| <a href="#variable_description">Variable Description</a>         | No        | No          | Text                      | Significant variables that are present in the data files distributed for public release, particularly demographic variables.                                                                                                                                                                                                                                                   |
+| <a href="#sampling">Sampling</a>                                 | No        | No          | Text                      | The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).                                                                                                                                                                                                                                                                |
+| <a href="#time_method">Time Method</a>                           | No        | Yes         | Text                      | The time dimension in which the data were collected and framed.                                                                                                                                                                                                                                                                                                                |
+| <a href="#data_source">Data Source</a>                           | No        | Yes         | Text                      | The source(s) of the data collection, when that source is external to the data collection and can be independently cited.                                                                                                                                                                                                                                                      |
+| <a href="#collection_mode">Collection Mode</a>                   | No        | Yes         | Text                      | The method(s) used to collect the data.                                                                                                                                                                                                                                                                                                                                        |
+| <a href="#extent_of_processing">Extent of Processing</a>         | No        | Yes         | Text                      | Describes processing activities and checks performed on data collections by ICPSR curation staff.                                                                                                                                                                                                                                                                              |
+| <a href="#weight">Weight</a>                                     | No        | No          | Text                      | A description of the criteria for using weights in the analysis of the data collection.                                                                                                                                                                                                                                                                                        |
+| <a href="#response_rates">Response Rates</a>                     | No        | No          | Text                      | The percentage of respondents in the sample who participated in the data collection.                                                                                                                                                                                                                                                                                           |
+| <a href="#scale">Scale</a>                                       | No        | No          | Text                      | Any commonly known scale used to collect data for the data collection (e.g., psychological scales such as MMPI and CPI, or occupational scales such as the Census Occupational Codes).                                                                                                                                                                                         |
+| <a href="#unit_of_observation">Unit of Observation</a>           | No        | Yes         | Text                      | Describes the entity being analyzed in the data collection; otherwise known as analysis unit.                                                                                                                                                                                                                                                                                  |
+| <a href="#geographic_unit">Geographic Unit</a>                   | No        | No          | Text                      | The smallest geographic unit used in the dataset.                                                                                                                                                                                                                                                                                                                              |
+| <a href="#restrictions">Restrictions</a>                         | No        | No          | Text                      | Information regarding any limitations on use or restrictions on access to the file(s).                                                                                                                                                                                                                                                                                         |
+| <a href="#changes_to_collection">Changes to Collection</a>       | No        | Yes         | Multi-part; see subfields           | A summary description of changes that have been made to the data collection since its last release.                                                                                                                                                                                                                                                                            |
+| <a href="#series">Series</a>                                     | No        | No          | Text                      | An ICPSR series is a named collection of related studies.                                                                                                                                                                                                                                                                                                                      |
+| <a href="#classification">Classification</a>                     | No        | Yes         | Text                      | ICPSR classifications address topics broadly, and are meant to be a good starting point for exploring the collection.                                                                                                                                                                                                                                                          |
+| <a href="#filesets">Filesets</a>                                 | No        | Yes         | Multi-part; see subfields           |  Identifies the grouping of files in a data collection. Every ICPSR data collection with at least one file must have at least one defined Fileset.                                                                                                                                                                                                                             |</p>
 <h2 id="key-for-metadata-element-entries">Key for Metadata Element Entries</h2>
 <p>Full information for each ICPSR study metadata element includes the following fields:</p>
 <ul>
