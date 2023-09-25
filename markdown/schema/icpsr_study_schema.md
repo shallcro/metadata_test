@@ -1,10 +1,11 @@
 # ICPSR Curated Study Metadata Schema
 
-Last updated: September 22, 2023
+Last updated: September 25, 2023
 
-This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to inform depositors of necessary information to improve the discoverability of their studies and at the same time assist ICPSR staff with metadata entry. A Style Guide is also available, containing guidelines that apply to all fields. Please refer to the JSON Schema version(ADD GITHUB URL) of this document for a machine-readable instance.
+This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.
 
 ## Metadata Elements: Overview
+
 
 | Property                                               | Required? | Repeatable? | Accepted Values           | Description                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------------------------------------------------ | --------- | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
