@@ -1,3 +1,5 @@
 # Change Log
 
-v1 (September 2023): Initial release and publication of the ICPSR Metadata documentation portal.
+| Date | Version | Note |
+|------|---------|------|
+| September 25, 2023 | v1 | Initial release and publication of the ICPSR Metadata documentation portal. |
