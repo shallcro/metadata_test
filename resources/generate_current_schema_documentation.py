@@ -261,6 +261,9 @@ def main():
         current_date=datetime.datetime.now()
         content.insert(2, "Last updated: {}\n\n".format(current_date.strftime('%B %d, %Y')))
 
+        #insert link to raw JSON Schema
+        content.insert(6, "For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json)\n\n")
+
         #fix array references
         for term in ['**Type**: `array of enum (of string)`', '**Type**: `array of string`', '**Type**: `array of object`']:
             content = fix_arrays(term, content)
