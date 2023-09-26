@@ -211,14 +211,14 @@ def main():
 
         #set up variables
         site_dir = os.path.join(args.source_dir, 'site')
-        schema_markdown_dir = os.path.join(args.source_dir, 'markdown', 'schema')
+        markdown_dir = os.path.join(args.source_dir, 'markdown')
         resource_dir = os.path.join(args.source_dir, 'resources')
         temp_dir = os.path.join(args.source_dir, 'temp')
         mkdocs_yml = os.path.join(resource_dir, 'mkdocs.yml')
         rtd_css = os.path.join(resource_dir, 'readthedocs_theme.css')
         metadata_key = os.path.join(resource_dir, 'key.md')
         
-        for folder in [temp_dir, site_dir, schema_markdown_dir]:
+        for folder in [temp_dir, site_dir, markdown_dir]:
             if not os.path.exists(folder):
                 os.makedirs(folder)
         
@@ -245,8 +245,7 @@ def main():
             
         #generate markdown using modified version of JSON Schema for Humans
         print("\tCreating markdown...")
-        md_filename = os.path.basename(os.path.splitext(dereferenced_file)[0])
-        md_file = os.path.join(schema_markdown_dir, f"{md_filename}.md")
+        md_file = os.path.join(markdown_dir, "icpsr_study_schema.md")
 
         cmd = "generate-schema-doc --config custom_template_path={} --config show_toc=false --config show_breadcrumbs=false {} {}".format(os.path.join(resource_dir, 'template', 'base.md'), dereferenced_file, md_file)
 
@@ -367,13 +366,6 @@ def main():
 
                     processed_lines = check_write(f"**Accepted Values**: {accepted_value}\n", fo, processed_lines, index)
 
-
-                # elif '*Term*' in line and '*Definition*' in line:
-                #     #add help note
-                #     check_write("Values must come from ICPSR's controlled vocabulary. See below for terms and definitions:\n\n", fo, processed_lines)
-                #     #now write line
-                #     processed_lines = check_write(line, fo, processed_lines, index)
-
                 elif '**Additional properties**: [[Not allowed]](# "Additional Properties not allowed.")' in line:
                     processed_lines.append(index)
                     processed_lines.append(index+1)
@@ -384,7 +376,7 @@ def main():
                 elif description_value in line:
                     processed_lines = check_write(line, fo, processed_lines, index)
                     processed_lines = check_write('\n', fo, processed_lines, index+1)
-                    check_write('For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json)\n\n## Metadata Elements: Overview\n\n', fo, processed_lines)
+                    check_write('For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json).\n\n## Metadata Elements: Overview\n\n', fo, processed_lines)
 
                 else:
                     processed_lines = check_write(line, fo, processed_lines, index)
