@@ -1,12 +1,12 @@
-site_name: ICPSR Metadata
+site_name: ICPSR Metadata Documentation Portal
 site_url: https://icpsr.github.io/metadata/
 docs_dir: ../markdown
 site_dir: ../site
 nav:
-  - Home: index.md
-  - Schema: icpsr_study_schema.md
-  - Style Guide: icpsr_style_guide.md
-  - Version History: version_history.md
+  - ICPSR Metadata Home: index.md
+  - Curated Study Metadata Schema: icpsr_study_schema.md
+  - Metadata Entry Style Guide: icpsr_style_guide.md
+  - Documentation Version History: version_history.md
 theme:
   name: readthedocs
   prev_next_buttons_location: none
