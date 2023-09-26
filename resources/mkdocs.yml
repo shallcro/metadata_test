@@ -4,9 +4,14 @@ docs_dir: ../markdown
 site_dir: ../site
 nav:
   - Home: index.md
+  - Schema: schema/index.md
+  - Style Guide: style/index.md
+  - Version History: changes/index.md
+pages:
+  - Home: index.md
   - Schema: schema/icpsr_study_schema.md
   - Style Guide: style/style_guide.md
-  - Version History: changes/changes.md
+  - Changes: changes/changes.md
 theme:
   name: readthedocs
   prev_next_buttons_location: none
