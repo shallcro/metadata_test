@@ -1,4 +1,4 @@
-#ICPSR Metadata Documentation Portal
+# ICPSR Metadata Documentation Portal
 
 Metadata are essential for maximizing the usefulness of data. Because it is often impossible for secondary researchers to ask questions of the original data producers, metadata are the de facto form of communication between them. Comprehensive metadata enables a deeper comprehension of a dataset, facilitates data searches by variables, and offers a variety of display options on the Web.
 
