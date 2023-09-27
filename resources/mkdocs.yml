@@ -13,4 +13,5 @@ theme:
   prev_next_buttons_location: none
   include_homepage_in_sidebar: false
   logo: ICPSR_logo_rgb_white-01.png
+extra_css: [style.css]
 
