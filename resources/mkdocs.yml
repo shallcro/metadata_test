@@ -9,4 +9,8 @@ nav:
   - Documentation Version History: version_history.md
 theme:
   name: readthedocs
+  custom_dir: custom_theme/
   prev_next_buttons_location: none
+  include_homepage_in_sidebar: false
+  logo: ICPSR_logo_rgb_white-01.png
+
