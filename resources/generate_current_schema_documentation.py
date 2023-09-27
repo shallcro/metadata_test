@@ -384,6 +384,9 @@ def main():
         # #generate html; run mkdocs
         cmd = 'mkdocs build -f {} --clean --verbose'.format(mkdocs_yml)
         subprocess.run(cmd, shell=True)
+
+        # #add improved CSS
+        shutil.copy(rtd_css, os.path.join(site_dir, 'css', 'theme.css'))
             
         #remove temp folder
         print("\n\nRemoving temp folder...")
