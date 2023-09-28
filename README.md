@@ -12,7 +12,7 @@ This repository includes the ICPSR curated study metadata schema and associated 
 If new content will be added to the ICPSR Metadata Documentation Portal:
 
 - Create a new repository branch from `main` (if working from the command line, make sure your local `main` is up to date by first running `git pull`).
-- Edit/create markdown files in the [Markdown](/markdown) folder. [1]
+- Edit the JSON Schema or YAML files (if making changes to the curated study schema) or edit/create markdown files in the [Markdown](/markdown) folder (if making changes to other metadata documentation). [1]
 - If new markdown pages have been added, they must be added to the "nav" section of the [mkdocs.yaml](/resources/mkdocs.yaml) configuration file to appear in the documentation portal. [2] The entry must include a page title and the path to the markdown file (relative to the Markdown folder), as illustrated below:  
   ![ICPSR mkdocs.yaml file](/resources/images/mkdocs_yaml.png)  
  - Commit your changes (and push to the remote repository, if working locally). 
