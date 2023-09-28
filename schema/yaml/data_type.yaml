@@ -6,19 +6,19 @@
 
     | *Term* | *Definition* |
     |----------|---------------|
-    | administrative records data | Information collected on individuals or groups as part of the routine administrative procedures of an agency, business, or institution. Such data are not usually collected with research purposes in mind, may be voluminous, and may require preparation such as coding in order to be usable by researchers. (Examples: income tax forms, patent applications, naturalization records, death certificates.) |
-    | aggregate data | When a file consists of summarized statistical data for an entire population. |
+    | administrative records data | Information collected on individuals or groups as part of the routine administrative procedures of an agency, business, or institution. Such data are not usually collected with research purposes in mind, may be voluminous, and may require preparation such as coding in order to be usable by researchers. Examples include income tax forms, patent applications, death certificates, etc. |
+    | aggregate data | Data compiled into summaries or summary reports, typically for the purposes of public reporting or statistical analysis. |
     | audio: sound data | Sound data recorded either in analog or digital form. |
-    | census/enumeration data | When data are collected from all members of a population. |
-    | clinical data | When the data deal with psychological or medical-related testing. |
-    | event/transaction data | When the data deal with a succession of events or transactions that occur over a specified time period. |
-    | experimental data | Gleaned from experiments, not clinical in nature. |
+    | census/enumeration data | Data collected from all members of a population. |
+    | clinical data | Data related to psychological or medical testing. |
+    | event/transaction data | Data that deal with a succession of events or transactions occurring over a specified time period. |
+    | experimental data | Data collected from experiments that are not clinical in nature. |
     | geographic information system (GIS) data | Data that captures positions and spatial patterns on Earth's surface. |
     | image: photographs, drawings, graphical representations | Data recorded as a still image. |
     | medical records | Health-related data that is associated with regular patient care. |
-    | observational data | When researchers record their observations. |
-    | program source code | When a file consists of computer program language. |
-    | roll call voting data | For records of votes of legislative bodies.
-    | survey data | When a file consists of data collected from a sample of respondents, generally through structured interviews or self-administered questionnaires. |
-    | text | When a file is composed solely of computer-readable text (like verbatim responses). |
-    | video: film, animation, etc. | Moving image with or without sound recorded either in analog or digital form. |
+    | observational data | Data collected through observation, with the research subject not directly involved in the recording of information. |
+    | program source code | Human-readable instructions that a programmer writes to specify the actions to be performed bya computer. |
+    | roll call voting data | Records of votes cast by legislative bodies.
+    | survey data | Data collected from a sample of respondents, generally through structured interviews or self-administered questionnaires. |
+    | text | Written work, readable by a machine or human. |
+    | video: film, animation, etc. | Moving image with, or without sound recorded either in analog or digital form. |

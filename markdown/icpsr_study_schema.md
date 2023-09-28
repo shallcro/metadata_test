@@ -183,7 +183,7 @@ Geography:
 
 Time Period:  
 
-  * All titles include the data collection's time period, which reflects the time period that the data collection covers and should match the Study Time Period. For example, in the 'Uganda Elite Study, 1964-1968', it is assumed that the Ugandans were surveyed about events in 1964-1968, even if the actual data collection might not have taken place until later.  
+  * All titles include the data collection's time period, which reflects the time period that the data collection covers and should match the Time Period. For example, in the 'Uganda Elite Study, 1964-1968', it is assumed that the Ugandans were surveyed about events in 1964-1968, even if the actual data collection might not have taken place until later.  
 
   * If the time period is already included in the title proper, it is not repeated.  
 
@@ -939,7 +939,7 @@ The [Getty Thesaurus of Geographic Names](http://www.getty.edu/research/tools/vo
 | Property                                     | Required? | Repeatable? | Accepted Values | Description                                                                                                                                                                                                                                                                                                                                        |
 | -------------------------------------------- | --------- | ----------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Date](#time_period_items_date )             | Yes       | No          | Text            | The date for a time period to which the data refer.                                                                                                                                                                                                                                                                                                |
-| [Time Frame](#time_period_items_time_frame ) | No        | No          | Text            | An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Study Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data'). |
+| [Time Frame](#time_period_items_time_frame ) | No        | No          | Text            | An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data'). |
 
 ##### <a name="time_period_items_date"></a>17.1.1. Date
 
@@ -979,7 +979,7 @@ Dates are formatted in accordance with ISO 8601 (YYYY, YYYY-MM, or YYYY-MM-DD). 
 
 ##### <a name="time_period_items_time_frame"></a>17.1.2. Time Frame
 
-**Description:** An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Study Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data').
+**Description:** An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data').
 
 **Required**: No
 
