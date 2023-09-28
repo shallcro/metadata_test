@@ -67,6 +67,14 @@
     <li class="toctree-l3"><a class="reference internal" href="#8-principal-investigator">8. Principal Investigator</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#81-subfields">8.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#811-name">8.1.1. Name</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#812-affiliation">8.1.2. Affiliation</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#813-order">8.1.3. Order</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -75,6 +83,12 @@
     <li class="toctree-l3"><a class="reference internal" href="#10-distributor">10. Distributor</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#101-subfields">10.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#1011-name">10.1.1. Name</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#1012-location">10.1.2. Location</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -83,6 +97,16 @@
     <li class="toctree-l3"><a class="reference internal" href="#12-funding-source">12. Funding Source</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#121-subfields">12.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#1211-agency">12.1.1. Agency</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#1212-grant-number">12.1.2. Grant Number</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#1213-purpose">12.1.3. Purpose</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#1214-order">12.1.4. Order</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -97,12 +121,24 @@
     <li class="toctree-l3"><a class="reference internal" href="#17-time-period">17. Time Period</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#171-subfields">17.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#1711-date">17.1.1. Date</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#1712-time-frame">17.1.2. Time Frame</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#18-collection-date">18. Collection Date</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#181-subfields">18.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#1811-date">18.1.1. Date</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#1812-time-frame">18.1.2. Time Frame</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -143,6 +179,12 @@
     <li class="toctree-l3"><a class="reference internal" href="#36-changes-to-collection">36. Changes to Collection</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#361-subfields">36.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#3611-date">36.1.1. Date</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#3612-note">36.1.2. Note</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -153,6 +195,14 @@
     <li class="toctree-l3"><a class="reference internal" href="#39-filesets">39. Filesets</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#391-subfields">39.1. Subfields:</a>
+        <ul>
+    <li class="toctree-l5"><a class="reference internal" href="#3911-number">39.1.1. Number</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#3912-name">39.1.2. Name</a>
+    </li>
+    <li class="toctree-l5"><a class="reference internal" href="#3913-sda-note">39.1.3. SDA Note</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -185,7 +235,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="icpsr-curated-study-metadata-schema">ICPSR Curated Study Metadata Schema</h1>
-<p>Last updated: September 27, 2023</p>
+<p>Last updated: September 28, 2023</p>
 <p>This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.</p>
 <p>For a machine-actionable copy of this information, please see the <a href="https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json">JSON Schema version</a>.</p>
 <h2 id="metadata-elements-overview">Metadata Elements: Overview</h2>
@@ -233,7 +283,7 @@
 <td>No</td>
 <td>Yes</td>
 <td>Text</td>
-<td>The alternate name(s) or acronym(s) by which a data collection may be commonly referred.</td>
+<td>Alternate name(s) or acronym(s) commonly used to refer to the data collection.</td>
 </tr>
 <tr>
 <td><a href="#link_title">Link Title</a></td>
@@ -254,7 +304,7 @@
 <td>Yes</td>
 <td>Yes</td>
 <td>Multi-part; see subfields</td>
-<td>The entity primarily responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.</td>
+<td>The entity or entities responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.</td>
 </tr>
 <tr>
 <td><a href="#citation">Citation</a></td>
@@ -282,14 +332,14 @@
 <td>No</td>
 <td>Yes</td>
 <td>Multi-part; see subfields</td>
-<td>Information on the data collection's funding.</td>
+<td>Information about funding that supported the data collection.</td>
 </tr>
 <tr>
 <td><a href="#external_source_ID">External Source ID</a></td>
 <td>No</td>
 <td>Yes</td>
 <td>Text</td>
-<td>A string that allows the data collection to be associated with a unique identifier supplied by the depositor.</td>
+<td>A unique identifier supplied by the depositor.</td>
 </tr>
 <tr>
 <td><a href="#summary">Summary</a></td>
@@ -482,9 +532,9 @@
 <li><strong>Required:</strong> Indicates whether the metadata element is mandatory ("Yes") or optional ("No"). Required elements must include at least one value.</li>
 <li><strong>Repeatable:</strong> Indicates whether the metadata element may be repeated ("Yes") or if it may only occur once ("No").</li>
 <li><strong>Accepted values:</strong> The type of values that may be used with the metadata element; options include text (with additional requirements, such as date formatting, noted when present) and numbers. Multi-part metadata elements have accepted value information provided in entries for individual subelements.</li>
-<li><strong>Controlled Vocabulary:</strong> Indicates the specific controlled vocabulary that must be used to provide values for the metadata element (‘N/A’ indicates no controlled vocabulary is required). </li>
-<li><strong>Usage Notes:</strong> Additional information about the nature, scope, and conventions for values that may be added to the metadata element. are Describes recommended practice, usage, scope, and/or other information that would assist metadata and other specialists to implement and use a metadata element.</li>
-<li><strong>ICPSR Input Guidance:</strong> Information for ICPSR staff related to using internal tools and resources to create and input metadata values. These notes are made available to the general ICPSR community for transparency.</li>
+<li><strong>Controlled Vocabulary:</strong> Indicates the specific controlled vocabulary (i.e., a set of standardized terms) that must be used to provide values for the metadata element (‘N/A’ indicates no controlled vocabulary is required). </li>
+<li><strong>Usage Notes:</strong> Additional information about the nature, scope, and conventions for values that may be added to the metadata element.  </li>
+<li><strong>ICPSR Input Guidance:</strong> Information for ICPSR staff related to using internal tools and resources to create and input metadata values. These notes are made available to the general ICPSR community for transparency.  </li>
 <li><strong>Examples:</strong> Examples of valid values for the metadata element.</li>
 </ul>
 <h2 id="metadata-elements-detailed-information">Metadata Elements: Detailed Information</h2>
@@ -546,7 +596,7 @@
 <p>The title proper uses title case: all major words are capitalized, while minor words are lowercased.  </p>
 </li>
 <li>
-<p>For new studies, ICPSR starts with the title proper provided by the principal investigator. Most title propers are straightforward about their contents, such as the 'American Community Survey' or the 'Census of Law Enforcement Training Academies.' Some title propers include a more branded description, such as 'Bridge of Faith: Aim4Peace Community-Based Violence Prevention Project or Contents' and 'Contexts of Cyberbullying: An Epidemiologic Study using Electronic Detection and Social Network Analysis.'  </p>
+<p>For new studies, ICPSR starts with the title proper provided by the data depositor. Most title propers are straightforward about their contents, such as the 'American Community Survey' or the 'Census of Law Enforcement Training Academies.' Some title propers include a more branded description, such as 'Bridge of Faith: Aim4Peace Community-Based Violence Prevention Project or Contents' and 'Contexts of Cyberbullying: An Epidemiologic Study using Electronic Detection and Social Network Analysis.'  </p>
 </li>
 <li>
 <p>For updated studies, ICPSR uses the existing title in production, making changes as necessary to add new years or additional geographical locations. For studies that are part of an ICPSR series, titles remain consistent with the previous series studies.  </p>
@@ -561,13 +611,10 @@
 <p>Cities are paired with state or province names that are spelled out (e.g., Portland, Oregon), unless the city names are unique or well-known.  </p>
 </li>
 <li>
-<p>Studies with more than four geographic locations typically are summarized using, for example, '5 countries,' '8 German cities,' '20 U.S. states' instead of listing all locations.   </p>
+<p>Studies with more than four geographic locations typically are summarized using, for example, '5 countries,' '8 German cities,' '20 U.S. states' instead of listing all locations. In the latter case, 'U.S.' is used rather than 'United States' or 'American'.  </p>
 </li>
 <li>
 <p>Descriptors that do not have a distinct geographic area, such as 'communities' or 'regions', are not included in titles.   </p>
-</li>
-<li>
-<p>'U.S.' is used rather than 'United States' or 'American'.  </p>
 </li>
 <li>
 <p>'Global' may be appropriate for studies where the universe of participants is truly worldwide. Possible examples include online surveys that are not restricted by geography, or studies of organizations, such as NGOs.   </p>
@@ -576,7 +623,7 @@
 <p>Time Period:  </p>
 <ul>
 <li>
-<p>All titles include the data collection's time period, which reflects the time period that the data collection covers and should match the Study Time Period. For example, in the 'Uganda Elite Study, 1964-1968', it is assumed that the Ugandans were surveyed about events in 1964-1968, even if the actual data collection might not have taken place until later.  </p>
+<p>All titles include the data collection's time period, which reflects the time period that the data collection covers and should match the Time Period. For example, in the 'Uganda Elite Study, 1964-1968', it is assumed that the Ugandans were surveyed about events in 1964-1968, even if the actual data collection might not have taken place until later.  </p>
 </li>
 <li>
 <p>If the time period is already included in the title proper, it is not repeated.  </p>
@@ -598,7 +645,7 @@
 <pre><code class="language-json">&quot;Aid Like A Paycheck (ALAP), Texas and California, 2014-2017&quot;
 </code></pre>
 <h3 id="5-alternate-title"><a name="alternate_title"></a>5. Alternate Title</h3>
-<p><strong>Description:</strong> The alternate name(s) or acronym(s) by which a data collection may be commonly referred.</p>
+<p><strong>Description:</strong> Alternate name(s) or acronym(s) commonly used to refer to the data collection.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -642,7 +689,7 @@
 <pre><code class="language-json">&quot;https://cebu.cpc.unc.edu/&quot;
 </code></pre>
 <h3 id="8-principal-investigator"><a name="principal_investigator"></a>8. Principal Investigator</h3>
-<p><strong>Description:</strong> The entity primarily responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.</p>
+<p><strong>Description:</strong> The entity or entities responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.</p>
 <p><strong>Required</strong>: Yes</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Multi-part element; see subfield definitions for more information.</p>
@@ -671,7 +718,7 @@
 <td>No</td>
 <td>No</td>
 <td>Text</td>
-<td>The organization with which an individual PI was affiliated at the time of a data collection's publication.</td>
+<td>The organization with which an individual PI was affiliated at the time of a data collection's deposit at ICPSR.</td>
 </tr>
 <tr>
 <td><a href="#principal_investigator_items_order">Order</a></td>
@@ -697,25 +744,24 @@
 </ol>
 <p>For names of people:   </p>
 <ul>
-<li>The First name can include any middle names or initials; the Last name can include any suffixes (such as 'II' or 'Jr.').   </li>
-<li>There is no space between first and middle initials.  </li>
+<li>The First name can include any middle names or initials; the Last name can include any suffixes (such as 'II' or 'Jr.'). If a first name includes only an inital, there is no space between first and middle initials.  </li>
 <li>Abbreviations are discouraged (especially 'et al.') but suffixes such as 'Sr.' and 'Jr.' are allowed.    </li>
 </ul>
 <p>For names of organizations:  </p>
 <ul>
-<li>Include the full hierarchy of the organization, going from the highest level down to the most specific. Note that the higher level of the organization must be listed before the lower level, and levels should be separated by a period (e.g.,'University of Michigan. College of Literature, Science, and the Arts'). There is no period following the last level listed.  </li>
+<li>Include the full hierarchy of the organization, going from the highest level down to the most specific. Note that the higher level of the organization must be listed before the lower level, and levels should be separated by a period (e.g., 'University of Michigan. College of Literature, Science, and the Arts'). There is no period following the last level listed.  </li>
 <li>Abbreviations are discouraged, except 'Inc.' and 'Co.' In particular, governmental PI's are spelled out completely (e.g., 'United States Department of Commerce' rather than 'U.S. Dept. of Commerce').  </li>
 <li>'The' is not included at the start of an organization name unless it is actually part of the official name (e.g., 'The New York Times' but not 'The National Institute of Justice')  </li>
 </ul>
 <p><strong>Examples:</strong> </p>
-<pre><code class="language-json">&quot;The New York Times&quot;
-</code></pre>
 <pre><code class="language-json">&quot;James A. McCann&quot;
+</code></pre>
+<pre><code class="language-json">&quot;The New York Times&quot;
 </code></pre>
 <pre><code class="language-json">&quot;United States Department of Justice. Office of Justice Programs. Bureau of Justice Statistics&quot;
 </code></pre>
 <h5 id="812-affiliation"><a name="principal_investigator_items_affiliation"></a>8.1.2. Affiliation</h5>
-<p><strong>Description:</strong> The organization with which an individual PI was affiliated at the time of a data collection's publication.</p>
+<p><strong>Description:</strong> The organization with which an individual PI was affiliated at the time of a data collection's deposit at ICPSR.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -878,14 +924,14 @@
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text (formatted as a URL)</p>
 <p><strong>Controlled Vocabulary:</strong> N/A</p>
-<p><strong>Usage Notes:</strong> The DOI (digital object identifier) is a persistent identifier provided by DataCite, a DOI registration agency. The DOI name is divided into three parts, separated by slashes ('/'): 'https://doi.org' is the HTTP URL link; followed by '10.3886', a globally unique number that identifies ICPSR as the registrant within the DOI namespace; followed by 'ICPSR', the ICPSR study number, and then the version number. The study number is automatically generated by ICPSR and is unique. Current study numbers are five digits, though four digit numbers were once standard and are still acceptable. Studies with fewer than five digits will have zeroes prepended in the DOI, ie. '10.3886/ICPSR02760' for study #2760.</p>
+<p><strong>Usage Notes:</strong> The DOI (digital object identifier) is a persistent identifier provided by DataCite, a DOI registration agency. The DOI name is divided into three parts, separated by slashes ('/'): 'https://doi.org' is the HTTP URL link; followed by '10.3886', a globally unique number that identifies ICPSR as the registrant within the DOI namespace; followed by 'ICPSR', the ICPSR study number, and then the version number. The study number is automatically generated by ICPSR and is unique. Current study numbers are five digits, though four digit numbers were once standard and are still acceptable. Studies with fewer than five digits will have zeroes prepended in the DOI (e.g., '10.3886/ICPSR02760).</p>
 <p><strong>Examples:</strong> </p>
 <pre><code class="language-json">&quot;https://doi.org/10.3886/ICPSR03025.v2&quot;
 </code></pre>
 <pre><code class="language-json">&quot;https://doi.org/10.3886/ICPSR06425.v1&quot;
 </code></pre>
 <h3 id="12-funding-source"><a name="funding_source"></a>12. Funding Source</h3>
-<p><strong>Description:</strong> Information on the data collection's funding.</p>
+<p><strong>Description:</strong> Information about funding that supported the data collection.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Multi-part element; see subfield definitions for more information.</p>
@@ -920,14 +966,14 @@
 <td>No</td>
 <td>Yes</td>
 <td>Text</td>
-<td>Indicates the purpose of the funding.</td>
+<td>The purpose of the funding.</td>
 </tr>
 <tr>
 <td><a href="#funding_source_items_order">Order</a></td>
 <td>Yes</td>
 <td>No</td>
 <td>Number</td>
-<td>Indication of the relative order of funding sources associated with the data collection.</td>
+<td>The relative order of funding sources associated with the data collection.</td>
 </tr>
 </tbody>
 </table>
@@ -974,7 +1020,7 @@
 ]
 </code></pre>
 <h5 id="1213-purpose"><a name="funding_source_items_purpose"></a>12.1.3. Purpose</h5>
-<p><strong>Description:</strong> Indicates the purpose of the funding.</p>
+<p><strong>Description:</strong> The purpose of the funding.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1001,6 +1047,7 @@
 </tr>
 </tbody>
 </table>
+<p><strong>ICPSR Input Guidance:</strong> This is an internal ICPSR element that is not publicly displayed.</p>
 <p><strong>Examples:</strong> </p>
 <pre><code class="language-json">[
     &quot;collection and/or analysis of data&quot;,
@@ -1012,7 +1059,7 @@
 ]
 </code></pre>
 <h5 id="1214-order"><a name="funding_source_items_order"></a>12.1.4. Order</h5>
-<p><strong>Description:</strong> Indication of the relative order of funding sources associated with the data collection.</p>
+<p><strong>Description:</strong> The relative order of funding sources associated with the data collection.</p>
 <p><strong>Required</strong>: Yes</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Number</p>
@@ -1055,12 +1102,12 @@
 ]
 </code></pre>
 <h3 id="13-external-source-id"><a name="external_source_ID"></a>13. External Source ID</h3>
-<p><strong>Description:</strong> A string that allows the data collection to be associated with a unique identifier supplied by the depositor.</p>
+<p><strong>Description:</strong> A unique identifier supplied by the depositor.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
 <p><strong>Controlled Vocabulary:</strong> N/A</p>
-<p><strong>ICPSR Input Guidance:</strong> If an external source ID needs to be included in the metadata, it will always be provided by the depositor.</p>
+<p><strong>ICPSR Input Guidance:</strong> This is an internal ICPSR element that is not publicly displayed.</p>
 <p><strong>Examples:</strong> </p>
 <pre><code class="language-json">[
     &quot;BJS:271&quot;
@@ -1089,7 +1136,7 @@
 <p><strong>Required</strong>: Yes</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
-<p><strong>Controlled Vocabulary:</strong> The <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10001">ICPSR Subject Thesaurus</a> and the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002">ICPSR Personal Names Authority List</a> are preferred sources. Non-thesaurus terms are considered for inclusion in these resources if provided.</p>
+<p><strong>Controlled Vocabulary:</strong> The <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10001">ICPSR Subject Thesaurus</a> and the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002">ICPSR Personal Names Authority List</a> are preferred sources.</p>
 <p><strong>Usage Notes:</strong> The <a href="https://authorities.loc.gov">Library of Congress Subject Terms</a> is referenced when adding new terms to the ICPSR Subject Thesaurus.</p>
 <p><strong>ICPSR Input Guidance:</strong> Non-thesaurus terms can be submitted in the metadata editor and will be reviewed by the metadata librarian. If an ICPSR staff member submits a non-thesaurus term, the metadata librarian will gauge the necessity of this term, check it against the Library of Congress Subject Headings to see if a different related term should be used, and consider it for addition to the ICPSR thesaurus.</p>
 <p><strong>Examples:</strong> </p>
@@ -1170,7 +1217,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <td>No</td>
 <td>No</td>
 <td>Text</td>
-<td>An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Study Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data').</td>
+<td>An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data').</td>
 </tr>
 </tbody>
 </table>
@@ -1193,7 +1240,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <pre><code class="language-json">&quot;2020-01-21--2021-01-21&quot;
 </code></pre>
 <h5 id="1712-time-frame"><a name="time_period_items_time_frame"></a>17.1.2. Time Frame</h5>
-<p><strong>Description:</strong> An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Study Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data').</p>
+<p><strong>Description:</strong> An optional free text description of the time(s) (or 'time frame') to which the data refer, typically used for time periods that cannot be expressed using just numbers, such as seasons or semesters (e.g., 'Fall 2012'), or to add context to a specific Time Period when multiple entries are present (e.g., 'Wave 1' or 'Student data').</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1343,11 +1390,11 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <tbody>
 <tr>
 <td>administrative records data</td>
-<td>Information collected on individuals or groups as part of the routine administrative procedures of an agency, business, or institution. Such data are not usually collected with research purposes in mind, may be voluminous, and may require preparation such as coding in order to be usable by researchers. (Examples: income tax forms, patent applications, naturalization records, death certificates.)</td>
+<td>Information collected on individuals or groups as part of the routine administrative procedures of an agency, business, or institution. Such data are not usually collected with research purposes in mind, may be voluminous, and may require preparation such as coding in order to be usable by researchers. Examples include income tax forms, patent applications, death certificates, etc.</td>
 </tr>
 <tr>
 <td>aggregate data</td>
-<td>When a file consists of summarized statistical data for an entire population.</td>
+<td>Data compiled into summaries or summary reports, typically for the purposes of public reporting or statistical analysis.</td>
 </tr>
 <tr>
 <td>audio: sound data</td>
@@ -1355,19 +1402,19 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 </tr>
 <tr>
 <td>census/enumeration data</td>
-<td>When data are collected from all members of a population.</td>
+<td>Data collected from all members of a population.</td>
 </tr>
 <tr>
 <td>clinical data</td>
-<td>When the data deal with psychological or medical-related testing.</td>
+<td>Data related to psychological or medical testing.</td>
 </tr>
 <tr>
 <td>event/transaction data</td>
-<td>When the data deal with a succession of events or transactions that occur over a specified time period.</td>
+<td>Data that deal with a succession of events or transactions occurring over a specified time period.</td>
 </tr>
 <tr>
 <td>experimental data</td>
-<td>Gleaned from experiments, not clinical in nature.</td>
+<td>Data collected from experiments that are not clinical in nature.</td>
 </tr>
 <tr>
 <td>geographic information system (GIS) data</td>
@@ -1383,27 +1430,27 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 </tr>
 <tr>
 <td>observational data</td>
-<td>When researchers record their observations.</td>
+<td>Data collected through observation, with the research subject not directly involved in the recording of information.</td>
 </tr>
 <tr>
 <td>program source code</td>
-<td>When a file consists of computer program language.</td>
+<td>Human-readable instructions that a programmer writes to specify the actions to be performed bya computer.</td>
 </tr>
 <tr>
 <td>roll call voting data</td>
-<td>For records of votes of legislative bodies.</td>
+<td>Records of votes cast by legislative bodies.</td>
 </tr>
 <tr>
 <td>survey data</td>
-<td>When a file consists of data collected from a sample of respondents, generally through structured interviews or self-administered questionnaires.</td>
+<td>Data collected from a sample of respondents, generally through structured interviews or self-administered questionnaires.</td>
 </tr>
 <tr>
 <td>text</td>
-<td>When a file is composed solely of computer-readable text (like verbatim responses).</td>
+<td>Written work, readable by a machine or human.</td>
 </tr>
 <tr>
 <td>video: film, animation, etc.</td>
-<td>Moving image with or without sound recorded either in analog or digital form.</td>
+<td>Moving image with, or without sound recorded either in analog or digital form.</td>
 </tr>
 </tbody>
 </table>
@@ -1486,7 +1533,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
 <p><strong>Controlled Vocabulary:</strong> N/A</p>
-<p><strong>Usage Notes:</strong> The sample is a selection out of the universe of all possible relevant cases (e.g. adults in the United States, housing units in three counties of Michigan, etc.) that could have been included in the data collection. A detailed discussion of such things as sampling error or other limitations of the sampling methodology is not required here. Note that some studies, such as censuses, do not utilize samples but include all members of the universe. In such cases, 'inap.' may be entered in Sampling to indicate it was not omitted in error.</p>
+<p><strong>Usage Notes:</strong> The sample is a selection out of the universe of all possible relevant cases (e.g., adults in the United States, housing units in three counties of Michigan, etc.) that could have been included in the data collection. A detailed discussion of such things as sampling error or other limitations of the sampling methodology is not required here. Note that some studies, such as censuses, do not utilize samples but include all members of the universe. In such cases, 'inap.' may be entered in Sampling to indicate it was not omitted in error.</p>
 <p><strong>Examples:</strong> </p>
 <pre><code class="language-json">[
     &quot;National sample of telephone numbers from cell (RDD) sampling frame.&quot;
@@ -1764,7 +1811,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
 <p><strong>Controlled Vocabulary:</strong> N/A</p>
-<p><strong>Usage Notes:</strong> Weight includes any information about weighting variables in the data, as well as any other weight information provided by the PI. If a weighting formula or coefficient was developed, provide this formula, define its elements, and indicate how the formula is applied to the data. It is acceptable to summarize information contained in documentation and refer users to that documentation for more information.</p>
+<p><strong>Usage Notes:</strong> Weight includes any information about weighting variables in the data, as well as any other weight information provided by the Principal Investigator. If a weighting formula or coefficient was developed, provide this formula, define its elements, and indicate how the formula is applied to the data. It is acceptable to summarize information contained in documentation and refer users to that documentation for more information.</p>
 <p><strong>ICPSR Input Guidance:</strong> For National Institute of Justice (NIJ) studies, 'Not applicable.' should be used if no information is available. For all other archives, this element is optional.</p>
 <p><strong>Examples:</strong> </p>
 <pre><code class="language-json">&quot;A weight variable with two implied decimal places has been included and must be used in any analysis.&quot;
@@ -1812,7 +1859,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
-<p><strong>Controlled Vocabulary:</strong> <a href="https://vocabularies.cessda.eu/vocabulary/AnalysisUnit?v=2.1.3&amp;lang=en">DDI Controlled Vocabulary for Analysis Unit</a>.</p>
+<p><strong>Controlled Vocabulary:</strong> N/A</p>
 <p><strong>Usage Notes:</strong> Use a brief phrase, for example: 'Individual,' 'Family,' 'Household,' or 'Organization'; consult the <a href="https://vocabularies.cessda.eu/vocabulary/AnalysisUnit?v=2.1.3&amp;lang=en">DDI Controlled Vocabulary for Analysis Unit</a> as needed.</p>
 <p><strong>Examples:</strong> </p>
 <pre><code class="language-json">[
