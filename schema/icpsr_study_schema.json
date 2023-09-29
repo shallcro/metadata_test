@@ -211,7 +211,7 @@
             "type": "string",
             "controlledVocab": "The [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) is the primary authority control source for funding agencies. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the ICPSR list.",
             "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/funding_agency?version=v1",
-            "icpsrGuidance": "The PI's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.",
+            "icpsrGuidance": "The Principal Investigator's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.",
             "examples": [
               "United States Department of Justice. Office of Justice Programs. Bureau of Justice Statistics",
               "Institute of Museum and Library Services",

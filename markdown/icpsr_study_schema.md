@@ -632,7 +632,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
   3. If the funding agency is not available in the ICPSR Organizational Names Authority List, consult the [Virtual International Authority File](https://viaf.org/) (VIAF).   
   4. If the funding agency does not have a VIAF record, consult another authoritative source (such as an organizational website) to determine the appropriate name.  
 
-**ICPSR Input Guidance:** The PI's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.
+**ICPSR Input Guidance:** The Principal Investigator's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.
 
 **Examples:** 
 
