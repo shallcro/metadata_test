@@ -3,7 +3,7 @@ site_url: https://icpsr.github.io/metadata/
 docs_dir: ../markdown
 site_dir: ../site
 nav:
-  - ICPSR Metadata Home: index.md
+  - Home: index.md
   - Curated Study Metadata Schema: icpsr_study_schema.md
   - Metadata Entry Style Guide: icpsr_style_guide.md
   - Documentation Version History: version_history.md
@@ -11,6 +11,8 @@ theme:
   name: readthedocs
   custom_dir: custom_theme/
   prev_next_buttons_location: none
-  include_homepage_in_sidebar: false
-  logo: ICPSR_logo_rgb_white-01.png
+  logo: ./assets/ICPSR_logo_rgb_white-01.png
   navigation_depth: 5
+  sticky_navigation: true
+extra_css: 
+  - ./assets/style.css
