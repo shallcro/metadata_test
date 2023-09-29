@@ -72,7 +72,7 @@
       "examples": [ "https://cebu.cpc.unc.edu/" ]
     },
     "principal_investigator": {
-      "description": "The entity or entities responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.",
+      "description": "The entity or entities responsible for the data collection, presented in order of importance. A Principal Investigator (PI) may be a person or an organization. Each data collection requires at least one PI.",
       "type": "array",
       "controlledVocab": "N/A",
       "items": {
@@ -715,12 +715,12 @@
         ["Family"]
       ]
     },
-    "geographic_unit": {
+    "smallest_geographic_unit": {
       "description": "The smallest geographic unit used in the dataset.",
       "type": "string",
       "controlledVocab": "N/A",
       "icpsrGuidance": "For National Institute of Justice (NIJ) studies, enter 'None' if no geographic variables are present. For all other archives, this element is optional.",
-      "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/geographic_unit?version=v1",
+      "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/smallest_geographic_unit?version=v1",
       "examples": [
         "state",
         "Census tract",

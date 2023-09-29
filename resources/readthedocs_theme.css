@@ -4426,7 +4426,7 @@ button[disabled] {
 }
 
 .btn-info {
-    background-color: #2980b9 !important
+    background-color: #115BFB !important
 }
 
 .btn-info:hover {
@@ -6191,7 +6191,7 @@ html {
 }
 
 .wy-menu-vertical a:active {
-    background-color: #2980b9;
+    background-color: #115BFB;
     cursor: pointer;
     color: #fff
 }
@@ -6206,7 +6206,7 @@ html {
     padding: .809em;
     margin-bottom: .809em;
     z-index: 200;
-    background-color: #2980b9;
+    background-color: #115BFB;
     text-align: center;
     color: #fcfcfc
 }
@@ -6223,7 +6223,7 @@ html {
     margin: auto auto .809em;
     height: 45px;
     width: 45px;
-    background-color: #2980b9;
+    background-color: #115BFB;
     padding: 5px;
     border-radius: 100%
 }
@@ -6276,7 +6276,7 @@ html {
 }
 
 .wy-nav .wy-menu-vertical a:hover {
-    background-color: #2980b9;
+    background-color: #115BFB;
     color: #fff
 }
 
@@ -6372,7 +6372,7 @@ html {
     margin-right: 12px;
     height: 45px;
     width: 45px;
-    background-color: #2980b9;
+    background-color: #115BFB;
     padding: 5px;
     border-radius: 100%
 }
