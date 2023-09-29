@@ -29,12 +29,15 @@ def main():
         if not os.path.exists(site_dir):
             os.makedirs(site_dir)
 
-    #generate html; run mkdocs
-    cmd = 'mkdocs build -f {} --clean --verbose'.format(mkdocs_yml)
-    subprocess.run(cmd, shell=True)
+        #generate html; run mkdocs
+        cmd = 'mkdocs build -f {} --clean --verbose'.format(mkdocs_yml)
+        subprocess.run(cmd, shell=True)
 
-    #add improved CSS
-    shutil.copy(rtd_css, os.path.join(site_dir, 'css', 'theme.css'))
+        #add improved CSS
+        shutil.copy(rtd_css, os.path.join(site_dir, 'css', 'theme.css'))
+
+    except Exception as ex: # pylint: disable=broad-except
+        sys.exit(1)
 
 if __name__=='__main__':
     main()
