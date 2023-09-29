@@ -1,4 +1,4 @@
-name: Update ICPSR Metadata Documentation
+name: Update ICPSR Markdown
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 jobs:
   update_markdown:
     runs-on: ubuntu-latest
-    name: Update ICPSR Markdown Schema
+    name: Update Markdown
 
     steps:
       - name: Checkout repository
