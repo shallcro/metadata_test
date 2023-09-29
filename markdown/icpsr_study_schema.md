@@ -1,6 +1,6 @@
 # ICPSR Curated Study Metadata Schema
 
-Last updated: September 28, 2023
+Last updated: September 29, 2023
 
 This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.
 
@@ -17,7 +17,7 @@ For a machine-actionable copy of this information, please see the [JSON Schema v
 | [Alternate Title](#alternate_title )                   | No        | Yes         | Text                      | Alternate name(s) or acronym(s) commonly used to refer to the data collection.                                                                                                                                                                                                                                                                                                 |
 | [Link Title](#link_title )                             | No        | No          | Text                      | The title of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.                                                                                                                                                                                                                              |
 | [Link Url](#link_url )                                 | No        | No          | Text                      | The URL of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.                                                                                                                                                                                                                                |
-| [Principal Investigator](#principal_investigator )     | Yes       | Yes         | Multi-part; see subfields           | The entity or entities responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.                                                                                                                                                                           |
+| [Principal Investigator](#principal_investigator )     | Yes       | Yes         | Multi-part; see subfields           | The entity or entities responsible for the data collection, presented in order of importance. A Principal Investigator (PI) may be a person or an organization. Each data collection requires at least one PI.                                                                                                                                                                 |
 | [Citation](#citation )                                 | No        | No          | Text                      | The established bibliographic reference for the data collection.                                                                                                                                                                                                                                                                                                               |
 | [Distributor](#distributor )                           | Yes       | Yes         | Multi-part; see subfields           | The organization(s) responsible for distributing the data collection. Values include both the name and the location of the Distributor(s).                                                                                                                                                                                                                                     |
 | [Digital Object Identifier (DOI)](#doi )                                           | No        | No          | Text                      | The registered persistent digital object identifier (DOI) associated with the data collection.                                                                                                                                                                                                                                                                                 |
@@ -43,7 +43,7 @@ For a machine-actionable copy of this information, please see the [JSON Schema v
 | [Response Rates](#response_rates )                     | No        | No          | Text                      | The percentage of respondents in the sample who participated in the data collection.                                                                                                                                                                                                                                                                                           |
 | [Scale](#scale )                                       | No        | No          | Text                      | Any commonly known scale used to collect data for the data collection (e.g., psychological scales such as MMPI and CPI, or occupational scales such as the Census Occupational Codes).                                                                                                                                                                                         |
 | [Unit of Observation](#unit_of_observation )           | No        | Yes         | Text                      | Describes the entity being analyzed in the data collection; otherwise known as analysis unit.                                                                                                                                                                                                                                                                                  |
-| [Geographic Unit](#geographic_unit )                   | No        | No          | Text                      | The smallest geographic unit used in the dataset.                                                                                                                                                                                                                                                                                                                              |
+| [Smallest Geographic Unit](#smallest_geographic_unit ) | No        | No          | Text                      | The smallest geographic unit used in the dataset.                                                                                                                                                                                                                                                                                                                              |
 | [Restrictions](#restrictions )                         | No        | No          | Text                      | Information regarding any limitations on use or restrictions on access to the file(s).                                                                                                                                                                                                                                                                                         |
 | [Changes to Collection](#changes_to_collection )       | No        | Yes         | Multi-part; see subfields           | A summary description of changes that have been made to the data collection since its last release.                                                                                                                                                                                                                                                                            |
 | [Series](#series )                                     | No        | No          | Text                      | An ICPSR series is a named collection of related studies.                                                                                                                                                                                                                                                                                                                      |
@@ -58,7 +58,7 @@ Full information for each ICPSR study metadata element includes the following fi
 - **Required:** Indicates whether the metadata element is mandatory ("Yes") or optional ("No"). Required elements must include at least one value.
 - **Repeatable:** Indicates whether the metadata element may be repeated ("Yes") or if it may only occur once ("No").
 - **Accepted values:** The type of values that may be used with the metadata element; options include text (with additional requirements, such as date formatting, noted when present) and numbers. Multi-part metadata elements have accepted value information provided in entries for individual subelements.
-- **Controlled Vocabulary:** Indicates the specific controlled vocabulary (i.e., a set of standardized terms) that must be used to provide values for the metadata element (‘N/A’ indicates no controlled vocabulary is required). 
+- **Controlled Vocabulary:** Indicates the specific controlled vocabulary (i.e., a set of standardized terms) that must be used to provide values for the metadata element ('N/A' indicates no controlled vocabulary is required). 
 - **Usage Notes:** Additional information about the nature, scope, and conventions for values that may be added to the metadata element.  
 - **ICPSR Input Guidance:** Information for ICPSR staff related to using internal tools and resources to create and input metadata values. These notes are made available to the general ICPSR community for transparency.  
 - **Examples:** Examples of valid values for the metadata element.
@@ -289,7 +289,7 @@ Time Period:
 
 ### <a name="principal_investigator"></a>8. Principal Investigator         
 
-**Description:** The entity or entities responsible for the data collection, in order of importance. A principal investigator (PI) may be a person or an organization. Each data collection requires at least one PI.
+**Description:** The entity or entities responsible for the data collection, presented in order of importance. A Principal Investigator (PI) may be a person or an organization. Each data collection requires at least one PI.
 
 **Required**: Yes
 
@@ -328,7 +328,7 @@ Time Period:
 
 For names of people:   
 
-  * The First name can include any middle names or initials; the Last name can include any suffixes (such as 'II' or 'Jr.'). If a first name includes only an inital, there is no space between first and middle initials.  
+  * The first name can include any middle names or initials; the Last name can include any suffixes (such as 'II' or 'Jr.'). If a first name includes only an inital, there is no space between first and middle initials.  
   * Abbreviations are discouraged (especially 'et al.') but suffixes such as 'Sr.' and 'Jr.' are allowed.    
 
 For names of organizations:  
@@ -1671,7 +1671,7 @@ The textual description should not simply restate the time period in words. For 
 ]
 ```
 
-### <a name="geographic_unit"></a>34. Geographic Unit         
+### <a name="smallest_geographic_unit"></a>34. Smallest Geographic Unit         
 
 **Description:** The smallest geographic unit used in the dataset.
 
@@ -1687,7 +1687,7 @@ The textual description should not simply restate the time period in words. For 
 
 If the data do not include a geographic variable by which the data can be analyzed, this element is not indicated. If all the cases are from a single state, but the cases are not subdivided geographically within that state, then 'state' is not indicated.  
 
-This element is only meant to convey specific, known, geography. If there is a variable indicating which testing site a survey was taken at, but the locations of the testing sites were masked by the PI, this element is likely not indicated.  
+This element is only meant to convey specific, known, geography. If there is a variable indicating which testing site a survey was taken at, but the locations of the testing sites were masked by the PI, this element is likely not indicated.
 
 **ICPSR Input Guidance:** For National Institute of Justice (NIJ) studies, enter 'None' if no geographic variables are present. For all other archives, this element is optional.
 
