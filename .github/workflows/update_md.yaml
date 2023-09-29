@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate Schema Documentation
         run: |
-          python resources/generate_current_schema_documentation.py --source-dir $GITHUB_WORKSPACE
+          python resources/generate_markdown_schema.py --source-dir $GITHUB_WORKSPACE
 
       - name: Commit and push changes
         run: |
