@@ -11,8 +11,8 @@ theme:
   name: readthedocs
   custom_dir: custom_theme/
   prev_next_buttons_location: none
-  logo: ICPSR_logo_rgb_white-01.png
+  logo: ./assets/ICPSR_logo_rgb_white-01.png
   navigation_depth: 5
   sticky_navigation: true
 extra_css: 
-  - style.css
+  - ./assets/style.css
