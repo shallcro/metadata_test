@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" Dereferences $ref elements in RDE schema files, replacing the $ref with the contents
-    of the referenced schema file.
+""" Dereferences $ref elements in schema files, replacing the $ref with the contents
+    of the referenced schema file. Then generates and cleans up a markdown file
 
     Assumptions:
-    1. $ref elements point only to other RDE schema and vocabulary files.
-    2. Every RDE schema and vocabulary file has a $schema element identifying the file as a JSON Schema.
-    3. Every RDE schema and vocabulary file has an $id element that can serve as the target of any $ref.
+    1. $ref elements point only to YAML files.
+    2. Every YAML file has a $schema element identifying the file as a JSON Schema.
+    3. Every YAML file has an $id element that can serve as the target of any $ref.
 """
 import os
 import sys
@@ -26,10 +26,8 @@ log = logging.getLogger()
 
 def get_cli_arguments():
     """ Parse command line arguments and return an object whose members contain the argument values. """
-    parser = argparse.ArgumentParser(description="Dereferences $ref elements in RDE schema files")
+    parser = argparse.ArgumentParser(description="Generate markdown from JSON Schema and YAML files")
     parser.add_argument('--source-dir', dest='source_dir', type=str, help='Source directory', required=True)
-    #parser.add_argument('--target-dir', dest='docs_dir', type=str, help='Target directory', required=True)
-    parser.add_argument('--verbose', dest='verbose', help='Include verbose output', required=False, default=False, action="store_true")
     return parser.parse_args()
 
 def load_cache(root_dir):
@@ -202,8 +200,6 @@ def main():
     # source_dir == the main project directory. Must contain a 'schema' folder
     try:
         args = get_cli_arguments()
-        if args.verbose:
-            log.setLevel(logging.DEBUG)
 
         if not os.path.exists(args.source_dir):
             print(f"{args.source_dir} does not exist. Please verify path and try again")
