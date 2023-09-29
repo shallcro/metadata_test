@@ -1,0 +1,57 @@
+name: Update ICPSR Metadata Documentation
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - gh-pages
+    paths:
+      - 'schema/**'
+
+jobs:
+  update_markdown:
+    runs-on: ubuntu-latest
+    name: Update ICPSR Markdown Schema
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files in the schema folder
+        id: changed-schema-specific
+        uses: tj-actions/changed-files@v39.2.0
+        with:
+          files: schema/**
+
+      - name: Prevent from running if no schema files changed
+        if: steps.changed-schema-specific.outputs.any_changed != 'true'
+        run: exit 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install -r resources/requirements.txt
+
+      - name: Generate Schema Documentation
+        run: |
+          python resources/generate_current_schema_documentation.py --source-dir $GITHUB_WORKSPACE
+
+      - name: Commit and push changes
+        run: |
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config user.name "${GITHUB_ACTOR}"
+          git add markdown/
+          git commit -am "Generated new copy of schema in markdown"
+          git push origin HEAD:$GITHUB_REF
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site

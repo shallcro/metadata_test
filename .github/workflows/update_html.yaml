@@ -1,0 +1,36 @@
+name: Update HTML Documentation
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  update_html:
+    runs-on: ubuntu-latest
+    name: Update HTML
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install -r resources/requirements.txt
+
+      - name: Generate HTML
+        run: |
+          python resources/run_mkdocs.py --source-dir $GITHUB_WORKSPACE
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
