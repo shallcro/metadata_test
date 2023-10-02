@@ -365,7 +365,7 @@
 <td>Yes</td>
 <td>Yes</td>
 <td>Text</td>
-<td>The preferred and/or current names of geographic and geopolitical entities.</td>
+<td>Geographic areas covered in the data. In addition to the total geographic scope of the data, may include any additional levels of geographic coding provided in the variables.</td>
 </tr>
 <tr>
 <td><a href="#time_period">Time Period</a></td>
@@ -386,14 +386,14 @@
 <td>No</td>
 <td>No</td>
 <td>Text</td>
-<td>The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.</td>
+<td>The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.</td>
 </tr>
 <tr>
 <td><a href="#data_type">Data Type</a></td>
 <td>No</td>
 <td>Yes</td>
 <td>Text</td>
-<td>Information describing the kind of data included in the file.</td>
+<td>Information describing the kind of data included in the data collection.</td>
 </tr>
 <tr>
 <td><a href="#collection_note">Collection Note</a></td>
@@ -407,7 +407,7 @@
 <td>No</td>
 <td>No</td>
 <td>Text</td>
-<td>Describes the concept of the data collection in detail.</td>
+<td>Describes the main objectives of the study, including the research questions being investigated.</td>
 </tr>
 <tr>
 <td><a href="#study_design">Study Design</a></td>
@@ -428,7 +428,7 @@
 <td>No</td>
 <td>No</td>
 <td>Text</td>
-<td>The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).</td>
+<td>The methods used to select the subset of the population that data are to be collected from (e.g., simple, systematic, stratified).</td>
 </tr>
 <tr>
 <td><a href="#time_method">Time Method</a></td>
@@ -442,14 +442,14 @@
 <td>No</td>
 <td>Yes</td>
 <td>Text</td>
-<td>The source(s) of the data collection, when that source is external to the data collection and can be independently cited.</td>
+<td>The source(s) of the data, when that source is external to the data collection and can be independently cited.</td>
 </tr>
 <tr>
 <td><a href="#collection_mode">Collection Mode</a></td>
 <td>No</td>
 <td>Yes</td>
 <td>Text</td>
-<td>The method(s) used to collect the data.</td>
+<td>The procedure(s), technique(s), or mode(s) of inquiry used to collect the data.</td>
 </tr>
 <tr>
 <td><a href="#extent_of_processing">Extent of Processing</a></td>
@@ -463,7 +463,7 @@
 <td>No</td>
 <td>No</td>
 <td>Text</td>
-<td>A description of the criteria for using weights in the analysis of the data collection.</td>
+<td>A description of the weight variables and the criteria for using them in analyzing the data. May included other information about how the data is weighted even if no weight variables are available.</td>
 </tr>
 <tr>
 <td><a href="#response_rates">Response Rates</a></td>
@@ -1169,7 +1169,7 @@
 ]
 </code></pre>
 <h3 id="16-geographic-coverage-area"><a name="geographic_coverage_area"></a>16. Geographic Coverage Area</h3>
-<p><strong>Description:</strong> The preferred and/or current names of geographic and geopolitical entities.</p>
+<p><strong>Description:</strong> Geographic areas covered in the data. In addition to the total geographic scope of the data, may include any additional levels of geographic coding provided in the variables.</p>
 <p><strong>Required</strong>: Yes</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1368,7 +1368,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 ]
 </code></pre>
 <h3 id="19-universe"><a name="universe"></a>19. Universe</h3>
-<p><strong>Description:</strong> The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.</p>
+<p><strong>Description:</strong> The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1388,7 +1388,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <pre><code class="language-json">&quot;Uncertified ballots for the 2000 United States presidential election in Florida.&quot;
 </code></pre>
 <h3 id="20-data-type"><a name="data_type"></a>20. Data Type</h3>
-<p><strong>Description:</strong> Information describing the kind of data included in the file.</p>
+<p><strong>Description:</strong> Information describing the kind of data included in the data collection.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1504,7 +1504,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 ]
 </code></pre>
 <h3 id="22-study-purpose"><a name="study_purpose"></a>22. Study Purpose</h3>
-<p><strong>Description:</strong> Describes the concept of the data collection in detail.</p>
+<p><strong>Description:</strong> Describes the main objectives of the study, including the research questions being investigated.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1541,7 +1541,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 <pre><code class="language-json">&quot;The LGBTQ Hate Crimes Interviews dataset contains more in-depth information, including victim demographic information, substance abuse history, information on whether the victim is open about their LGBTQ identification, the victim's job status, and information about how the victim reacted to the crime, such as whether or not they reported the crime to the police and their level of cooperation with the police and prosecution.&quot;
 </code></pre>
 <h3 id="25-sampling"><a name="sampling"></a>25. Sampling</h3>
-<p><strong>Description:</strong> The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).</p>
+<p><strong>Description:</strong> The methods used to select the subset of the population that data are to be collected from (e.g., simple, systematic, stratified).</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1640,7 +1640,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 ]
 </code></pre>
 <h3 id="27-data-source"><a name="data_source"></a>27. Data Source</h3>
-<p><strong>Description:</strong> The source(s) of the data collection, when that source is external to the data collection and can be independently cited.</p>
+<p><strong>Description:</strong> The source(s) of the data, when that source is external to the data collection and can be independently cited.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1661,7 +1661,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 ]
 </code></pre>
 <h3 id="28-collection-mode"><a name="collection_mode"></a>28. Collection Mode</h3>
-<p><strong>Description:</strong> The method(s) used to collect the data.</p>
+<p><strong>Description:</strong> The procedure(s), technique(s), or mode(s) of inquiry used to collect the data.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: Yes</p>
 <p><strong>Accepted Values</strong>: Text</p>
@@ -1819,7 +1819,7 @@ Each geographic term's full hierarchy must be included; please note:   </p>
 ]
 </code></pre>
 <h3 id="30-weight"><a name="weight"></a>30. Weight</h3>
-<p><strong>Description:</strong> A description of the criteria for using weights in the analysis of the data collection.</p>
+<p><strong>Description:</strong> A description of the weight variables and the criteria for using them in analyzing the data. May included other information about how the data is weighted even if no weight variables are available.</p>
 <p><strong>Required</strong>: No</p>
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
