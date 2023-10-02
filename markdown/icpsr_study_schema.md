@@ -348,6 +348,18 @@ For names of organizations:
 ```
 
 ```json
+"Warren Winkelstein Jr."
+```
+
+```json
+"E.V. Oppenhuis"
+```
+
+```json
+"Miner P. Marchbanks III"
+```
+
+```json
 "The New York Times"
 ```
 
