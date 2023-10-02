@@ -86,6 +86,9 @@
             "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/pi_name?version=v1",
             "examples": [              
               "James A. McCann",
+              "Warren Winkelstein Jr.",
+              "E.V. Oppenhuis",
+              "Miner P. Marchbanks III",
               "The New York Times",
               "United States Department of Justice. Office of Justice Programs. Bureau of Justice Statistics"
             ]
