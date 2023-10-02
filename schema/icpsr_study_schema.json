@@ -325,7 +325,7 @@
       ]
     },
     "geographic_coverage_area": {
-      "description": "The preferred and/or current names of geographic and geopolitical entities.",
+      "description": "Geographic areas covered in the data. In addition to the total geographic scope of the data, may include any additional levels of geographic coding provided in the variables.",
       "type": "array",
       "items": {
         "type": "string"
@@ -442,7 +442,7 @@
       ]
     },
     "universe": {
-      "description": "The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.",
+      "description": "The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "Age, nationality, and residence commonly help to delineate a given universe, but any of a number of factors may be involved, such as sex, race, income, veteran status, criminal convictions, etc. The Universe may consist of elements other than persons, such as housing units, court cases, deaths, countries, etc. It should be possible to tell from the description of the universe whether a given individual or element (hypothetical or real) is a member of the population under study. Typically, the Universe statement is about one sentence or shorter, and reflects the entire possible population a data collection sought to study.",
@@ -456,7 +456,7 @@
       ]
     },
     "data_type": {
-      "description": "Information describing the kind of data included in the file.",
+      "description": "Information describing the kind of data included in the data collection.",
       "type": "array",
       "items": {
         "type": "string",
@@ -510,7 +510,7 @@
       ]
     },
     "study_purpose": {
-      "description": "Describes the concept of the data collection in detail.",
+      "description": "Describes the main objectives of the study, including the research questions being investigated.",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "The Study Purpose provides more specific information than the Summary element, including the data collection's objectives, intended achievements, and lists of questions it sought to answer. This element can also include historical or background information about the research project. As with the Summary, the text should be written in third person and avoid any commentary on the data collection's outcomes.",
@@ -540,7 +540,7 @@
       ]
     },
     "sampling": {
-      "description": "The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).",
+      "description": "The methods used to select the subset of the population that data are to be collected from (e.g., simple, systematic, stratified).",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "The sample is a selection out of the universe of all possible relevant cases (e.g., adults in the United States, housing units in three counties of Michigan, etc.) that could have been included in the data collection. A detailed discussion of such things as sampling error or other limitations of the sampling methodology is not required here. Note that some studies, such as censuses, do not utilize samples but include all members of the universe. In such cases, 'inap.' may be entered in Sampling to indicate it was not omitted in error.",
@@ -589,7 +589,7 @@
       ]
     },
     "data_source": {
-      "description": "The source(s) of the data collection, when that source is external to the data collection and can be independently cited.",
+      "description": "The source(s) of the data, when that source is external to the data collection and can be independently cited.",
       "type": "array",
       "items": {
         "type": "string"
@@ -610,7 +610,7 @@
       ]
     },
     "collection_mode": {
-      "description": "The method(s) used to collect the data.",
+      "description": "The procedure(s), technique(s), or mode(s) of inquiry used to collect the data.",
       "type": "array",
       "items": {
         "type": "string",
@@ -671,7 +671,7 @@
       ]
     },
     "weight": {
-      "description": "A description of the criteria for using weights in the analysis of the data collection.",
+      "description": "A description of the weight variables and the criteria for using them in analyzing the data. May included other information about how the data is weighted even if no weight variables are available.",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "Weight includes any information about weighting variables in the data, as well as any other weight information provided by the Principal Investigator. If a weighting formula or coefficient was developed, provide this formula, define its elements, and indicate how the formula is applied to the data. It is acceptable to summarize information contained in documentation and refer users to that documentation for more information.",
