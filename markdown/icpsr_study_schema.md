@@ -1665,7 +1665,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** Use a brief phrase, for example: 'Individual,' 'Family,' 'Household,' or 'Organization'; consult the [DDI Controlled Vocabulary for Analysis Unit](https://vocabularies.cessda.eu/vocabulary/AnalysisUnit?v=2.1.3&lang=en) as needed.
+**Usage Notes:** Use a brief phrase, for example: 'Individual,' 'Family,' 'Household,' or 'Organization'; when possible, conform to the [DDI Controlled Vocabulary for Analysis Unit](https://vocabularies.cessda.eu/vocabulary/AnalysisUnit?v=2.1.3&lang=en).
 
 **Examples:** 
 
