@@ -1,6 +1,6 @@
 # ICPSR Curated Study Metadata Schema
 
-Last updated: September 29, 2023
+Last updated: October 02, 2023
 
 This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.
 
@@ -205,6 +205,10 @@ Time Period:
 
 ```json
 "Aid Like A Paycheck (ALAP), Texas and California, 2014-2017"
+```
+
+```json
+"COVID-19 Disruptions Disproportionately Affect Female Academics, Global, 2020"
 ```
 
 ### <a name="alternate_title"></a>5. Alternate Title         
