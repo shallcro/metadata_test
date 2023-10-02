@@ -25,21 +25,21 @@ For a machine-actionable copy of this information, please see the [JSON Schema v
 | [External Source ID](#external_source_ID )             | No        | Yes         | Text                      | A unique identifier supplied by the depositor.                                                                                                                                                                                                                                                                                                                                 |
 | [Summary](#summary )                                   | Yes       | No          | Text                      | A full description or abstract of the data collection's subject matter or intellectual content. The main goal of the Summary is to give the user a clear sense of what the collection is about, including the purpose of the collection, the major topics covered, and what questions the principal investigators attempted to answer when they conducted the data collection. |
 | [Subject Term](#subject_term )                         | Yes       | Yes         | Text                      | A controlled list of terms used for indexing purposes to indicate what topics a data collection reflects. Subject Terms serve to increase the collection's discoverability by topic.                                                                                                                                                                                           |
-| [Geographic Coverage Area](#geographic_coverage_area ) | Yes       | Yes         | Text                      | The preferred and/or current names of geographic and geopolitical entities.                                                                                                                                                                                                                                                                                                    |
+| [Geographic Coverage Area](#geographic_coverage_area ) | Yes       | Yes         | Text                      | Geographic areas covered in the data. In addition to the total geographic scope of the data, may include any additional levels of geographic coding provided in the variables.                                                                                                                                                                                                 |
 | [Time Period](#time_period )                           | Yes       | Yes         | Multi-part; see subfields           | Information about the time period(s) to which the data refer. The time period should focus on the dates the data are actually about, regardless of when the data were collected.                                                                                                                                                                                               |
 | [Collection Date](#collection_date )                   | No        | Yes         | Multi-part; see subfields           | Information on the date(s) when the data were physically collected.                                                                                                                                                                                                                                                                                                            |
-| [Universe](#universe )                                 | No        | No          | Text                      | The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.                                                                                                                                                                                                                                      |
-| [Data Type](#data_type )                               | No        | Yes         | Text                      | Information describing the kind of data included in the file.                                                                                                                                                                                                                                                                                                                  |
+| [Universe](#universe )                                 | No        | No          | Text                      | The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.                                                                                                                                                                                                                                    |
+| [Data Type](#data_type )                               | No        | Yes         | Text                      | Information describing the kind of data included in the data collection.                                                                                                                                                                                                                                                                                                       |
 | [Collection Note](#collection_note )                   | No        | Yes         | Text                      | A description of technical details and other characteristics of the data collection (such as unique authoring, discrepancies, dissemination, or processing information) that cannot be recorded in other metadata elements but constitutes important information for the secondary data user.                                                                                  |
-| [Study Purpose](#study_purpose )                       | No        | No          | Text                      | Describes the concept of the data collection in detail.                                                                                                                                                                                                                                                                                                                        |
+| [Study Purpose](#study_purpose )                       | No        | No          | Text                      | Describes the main objectives of the study, including the research questions being investigated.                                                                                                                                                                                                                                                                               |
 | [Study Design](#study_design )                         | No        | No          | Text                      | Describes the procedures the researchers used to contact subjects and/or to collect the data.                                                                                                                                                                                                                                                                                  |
 | [Variable Description](#variable_description )         | No        | No          | Text                      | Significant variables that are present in the data files distributed for public release, particularly demographic variables.                                                                                                                                                                                                                                                   |
-| [Sampling](#sampling )                                 | No        | No          | Text                      | The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).                                                                                                                                                                                                                                                                |
+| [Sampling](#sampling )                                 | No        | No          | Text                      | The methods used to select the subset of the population that data are to be collected from (e.g., simple, systematic, stratified).                                                                                                                                                                                                                                             |
 | [Time Method](#time_method )                           | No        | Yes         | Text                      | The time dimension in which the data were collected and framed.                                                                                                                                                                                                                                                                                                                |
-| [Data Source](#data_source )                           | No        | Yes         | Text                      | The source(s) of the data collection, when that source is external to the data collection and can be independently cited.                                                                                                                                                                                                                                                      |
-| [Collection Mode](#collection_mode )                   | No        | Yes         | Text                      | The method(s) used to collect the data.                                                                                                                                                                                                                                                                                                                                        |
+| [Data Source](#data_source )                           | No        | Yes         | Text                      | The source(s) of the data, when that source is external to the data collection and can be independently cited.                                                                                                                                                                                                                                                                 |
+| [Collection Mode](#collection_mode )                   | No        | Yes         | Text                      | The procedure(s), technique(s), or mode(s) of inquiry used to collect the data.                                                                                                                                                                                                                                                                                                |
 | [Extent of Processing](#extent_of_processing )         | No        | Yes         | Text                      | Describes processing activities and checks performed on data collections by ICPSR curation staff.                                                                                                                                                                                                                                                                              |
-| [Weight](#weight )                                     | No        | No          | Text                      | A description of the criteria for using weights in the analysis of the data collection.                                                                                                                                                                                                                                                                                        |
+| [Weight](#weight )                                     | No        | No          | Text                      | A description of the weight variables and the criteria for using them in analyzing the data. May included other information about how the data is weighted even if no weight variables are available.                                                                                                                                                                          |
 | [Response Rates](#response_rates )                     | No        | No          | Text                      | The percentage of respondents in the sample who participated in the data collection.                                                                                                                                                                                                                                                                                           |
 | [Scale](#scale )                                       | No        | No          | Text                      | Any commonly known scale used to collect data for the data collection (e.g., psychological scales such as MMPI and CPI, or occupational scales such as the Census Occupational Codes).                                                                                                                                                                                         |
 | [Unit of Observation](#unit_of_observation )           | No        | Yes         | Text                      | Describes the entity being analyzed in the data collection; otherwise known as analysis unit.                                                                                                                                                                                                                                                                                  |
@@ -893,7 +893,7 @@ The Summary is written in the third person and avoids attempting to address issu
 
 ### <a name="geographic_coverage_area"></a>16. Geographic Coverage Area         
 
-**Description:** The preferred and/or current names of geographic and geopolitical entities.
+**Description:** Geographic areas covered in the data. In addition to the total geographic scope of the data, may include any additional levels of geographic coding provided in the variables.
 
 **Required**: Yes
 
@@ -1149,7 +1149,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="universe"></a>19. Universe         
 
-**Description:** The group of persons, organizations, events, or other elements that are the object of the data collection and to which the results refer.
+**Description:** The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.
 
 **Required**: No
 
@@ -1189,7 +1189,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="data_type"></a>20. Data Type         
 
-**Description:** Information describing the kind of data included in the file.
+**Description:** Information describing the kind of data included in the data collection.
 
 **Required**: No
 
@@ -1277,7 +1277,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="study_purpose"></a>22. Study Purpose         
 
-**Description:** Describes the concept of the data collection in detail.
+**Description:** Describes the main objectives of the study, including the research questions being investigated.
 
 **Required**: No
 
@@ -1351,7 +1351,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="sampling"></a>25. Sampling         
 
-**Description:** The methods used to select the cases that appear in the data collection (e.g., simple, systematic, stratified).
+**Description:** The methods used to select the subset of the population that data are to be collected from (e.g., simple, systematic, stratified).
 
 **Required**: No
 
@@ -1439,7 +1439,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="data_source"></a>27. Data Source         
 
-**Description:** The source(s) of the data collection, when that source is external to the data collection and can be independently cited.
+**Description:** The source(s) of the data, when that source is external to the data collection and can be independently cited.
 
 **Required**: No
 
@@ -1474,7 +1474,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="collection_mode"></a>28. Collection Mode         
 
-**Description:** The method(s) used to collect the data.
+**Description:** The procedure(s), technique(s), or mode(s) of inquiry used to collect the data.
 
 **Required**: No
 
@@ -1563,7 +1563,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="weight"></a>30. Weight         
 
-**Description:** A description of the criteria for using weights in the analysis of the data collection.
+**Description:** A description of the weight variables and the criteria for using them in analyzing the data. May included other information about how the data is weighted even if no weight variables are available.
 
 **Required**: No
 
