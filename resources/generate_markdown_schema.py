@@ -392,7 +392,7 @@ def main():
                     example_count += 1
 
                     if example_count == 2:
-                        processed_lines = check_write(f'**Full {current_element} Examples (with all Subfields):**', fo, processed_lines, index)
+                        processed_lines = check_write(f'###### Complete {current_element} Examples (with Subfields):', fo, processed_lines, index)
                     else:
                         processed_lines = check_write(line, fo, processed_lines, index)
 
