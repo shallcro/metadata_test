@@ -266,7 +266,8 @@ def main():
         anchor_pattern = r'#+\s*<a name="([^"]+)">'
         processed_lines = []
         description_value = get_schema_description(args.source_dir)
-        first_heading = False
+        first_heading = True
+        example_count = 0
 
         #loop through content and fix various issues
         with open(md_file, 'w', encoding='utf-8') as fo:
@@ -293,8 +294,11 @@ def main():
                         processed_lines = check_write(line, fo, processed_lines, index)
                         
                 elif "##" in line and "<a name=" in line:
+                    #resent our example_count variable
+                    example_count = 0
+
                     #if this is the first ## heading, we need to insert our metadata record key
-                    if not first_heading:
+                    if first_heading:
 
                         with open(metadata_key, 'r', encoding='utf-8') as fi:
                             key_content = fi.readlines()
@@ -305,8 +309,13 @@ def main():
                         check_write('\n## Metadata Elements: Detailed Information\n\n', fo, processed_lines)
 
                         #change our flag so we don't add the key again!
-                        first_heading = True
+                        first_heading = False
 
+                    #get the name of the current element, for later use with subfield example heading, if needed
+                    if line.startswith("## "):
+                        current_element = line.split('.')[-1].strip()
+
+                    #verify if line matches our anchor pattern; this means it will be a heading, with an anchor link
                     match = re.search(anchor_pattern, line)
                     if match:
                         name_attr_value = match.group(1)
@@ -339,6 +348,10 @@ def main():
 
                             #add repeatable? statement
                             check_write(f"**Repeatable**: {entry['repeatable']}\n", fo, processed_lines)
+
+                            #If this is a main element, get name for later use with subfield example heading, if needed
+                            if line.startswith("## "):
+                                current_element = entry['cleaned_label']
 
                 elif line.startswith("**Type**"):
                     data_type = line.split(':')[1].strip().replace('`', '')
@@ -373,6 +386,15 @@ def main():
                     processed_lines = check_write(line, fo, processed_lines, index)
                     processed_lines = check_write('\n', fo, processed_lines, index+1)
                     check_write('For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json).\n\n## Metadata Elements: Overview\n\n', fo, processed_lines)
+
+                #check to see if this is the second 'example' in a given section--if so, change the heading so that it's clear this is a full example with all subfields 
+                elif line.startswith('**Examples:**'):
+                    example_count += 1
+
+                    if example_count == 2:
+                        processed_lines = check_write(f'**Full {current_element} Examples (with all Subfields):**', fo, processed_lines, index)
+                    else:
+                        processed_lines = check_write(line, fo, processed_lines, index)
 
                 else:
                     processed_lines = check_write(line, fo, processed_lines, index)
