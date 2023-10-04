@@ -294,7 +294,7 @@ def main():
                         processed_lines = check_write(line, fo, processed_lines, index)
                         
                 elif "##" in line and "<a name=" in line:
-                    #resent our example_count variable
+                    #reset our example_count variable--we need to see if there are multiple 'Example' sections under any one heading
                     example_count = 0
 
                     #if this is the first ## heading, we need to insert our metadata record key
