@@ -439,8 +439,7 @@ Additional points regarding the names of organizations:
 3
 ```
 
-**Examples:** 
-
+###### Complete Principal Investigator Examples (with Subfields):
 ```json
 [
     {
@@ -562,8 +561,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 "Princeton, NJ"
 ```
 
-**Examples:** 
-
+###### Complete Distributor Examples (with Subfields):
 ```json
 [
     {
@@ -762,8 +760,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 3
 ```
 
-**Examples:** 
-
+###### Complete Funding Source Examples (with Subfields):
 ```json
 [
     {
@@ -1022,8 +1019,7 @@ The textual description should not simply restate the time period in words. For 
 "Post-Survey Follow-Up"
 ```
 
-**Examples:** 
-
+###### Complete Time Period Examples (with Subfields):
 ```json
 [
     {
@@ -1124,8 +1120,7 @@ The textual description should not simply restate the time period in words. For 
 "Post-Survey Follow-Up"
 ```
 
-**Examples:** 
-
+###### Complete Collection Date Examples (with Subfields):
 ```json
 [
     {

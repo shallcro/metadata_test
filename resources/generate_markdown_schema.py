@@ -389,8 +389,9 @@ def main():
 
                 #check to see if this is the second 'example' in a given section--if so, change the heading so that it's clear this is a full example with all subfields 
                 elif line.startswith('**Examples:**'):
+                    #Add one to our example count
                     example_count += 1
-
+                    #if our count is now at 2 it means we have consecutive 'Example' sections under one heading. Adjust the label. If count is at one, just write the line to file-out.
                     if example_count == 2:
                         processed_lines = check_write(f'###### Complete {current_element} Examples (with Subfields):', fo, processed_lines, index)
                     else:
