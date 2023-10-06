@@ -442,7 +442,7 @@
       ]
     },
     "universe": {
-      "description": "The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.",
+      "description": "The total group of persons or other entities (e.g., households, organizations, etc.) that are the object of research and to which analytic results refer.",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "Age, nationality, and residence commonly help to delineate a given universe, but any of a number of factors may be involved, such as sex, race, income, veteran status, criminal convictions, etc. The Universe may consist of elements other than persons, such as housing units, court cases, deaths, countries, etc. It should be possible to tell from the description of the universe whether a given individual or element (hypothetical or real) is a member of the population under study. Typically, the Universe statement is about one sentence or shorter, and reflects the entire possible population a data collection sought to study.",
