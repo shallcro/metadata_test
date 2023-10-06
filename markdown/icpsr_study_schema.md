@@ -1,6 +1,6 @@
 # ICPSR Curated Study Metadata Schema
 
-Last updated: October 02, 2023
+Last updated: October 06, 2023
 
 This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.
 
@@ -28,7 +28,7 @@ For a machine-actionable copy of this information, please see the [JSON Schema v
 | [Geographic Coverage Area](#geographic_coverage_area ) | Yes       | Yes         | Text                      | Geographic areas covered in the data. In addition to the total geographic scope of the data, may include any additional levels of geographic coding provided in the variables.                                                                                                                                                                                                 |
 | [Time Period](#time_period )                           | Yes       | Yes         | Multi-part; see subfields           | Information about the time period(s) to which the data refer. The time period should focus on the dates the data are actually about, regardless of when the data were collected.                                                                                                                                                                                               |
 | [Collection Date](#collection_date )                   | No        | Yes         | Multi-part; see subfields           | Information on the date(s) when the data were physically collected.                                                                                                                                                                                                                                                                                                            |
-| [Universe](#universe )                                 | No        | No          | Text                      | The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.                                                                                                                                                                                                                                    |
+| [Universe](#universe )                                 | No        | No          | Text                      | The total group of persons or other entities (e.g., households, organizations, etc.) that are the object of research and to which analytic results refer.                                                                                                                                                                                                                      |
 | [Data Type](#data_type )                               | No        | Yes         | Text                      | Information describing the kind of data included in the data collection.                                                                                                                                                                                                                                                                                                       |
 | [Collection Note](#collection_note )                   | No        | Yes         | Text                      | A description of technical details and other characteristics of the data collection (such as unique authoring, discrepancies, dissemination, or processing information) that cannot be recorded in other metadata elements but constitutes important information for the secondary data user.                                                                                  |
 | [Study Purpose](#study_purpose )                       | No        | No          | Text                      | Describes the main objectives of the study, including the research questions being investigated.                                                                                                                                                                                                                                                                               |
@@ -1149,7 +1149,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="universe"></a>19. Universe         
 
-**Description:** The group of persons, organizations, events, or other elements that are the object of the research and to which any analytic results refer.
+**Description:** The total group of persons or other entities (e.g., households, organizations, etc.) that are the object of research and to which analytic results refer.
 
 **Required**: No
 
