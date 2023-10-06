@@ -21,7 +21,7 @@
  * https://github.com/mkdocs/mkdocs/issues/233
  */
 .rst-content pre code {
-    white-space: pre;
+    white-space: pre-wrap;
     word-wrap: normal;
     display: block;
     padding: 12px;
