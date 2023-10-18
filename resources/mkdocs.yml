@@ -4,9 +4,9 @@ docs_dir: ../markdown
 site_dir: ../site
 nav:
   - Home: index.md
-  - Curated Study Metadata Schema: icpsr_study_schema.md
-  - Metadata Entry Style Guide: icpsr_style_guide.md
-  - Documentation Version History: version_history.md
+  - ICPSR Curated Study Metadata Schema: icpsr_study_schema.md
+  - ICPSR Metadata Style Guide: icpsr_style_guide.md
+  - Documentation Portal Version History: version_history.md
 theme:
   name: readthedocs
   custom_dir: custom_theme/
