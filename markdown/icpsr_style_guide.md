@@ -26,10 +26,10 @@ If names are not present in ICPSR lists, the [Virtual International Authority Fi
 
 When entering the name of a person or organization, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:  
 
-  1. If the person or organization has published/distributed/funded data for ICPSR, use the name as it has been displayed previously within the ICPSR catalog.  
+  1. If the person or organization has published/distributed/sponsored data for ICPSR in the past, use the name as it has been displayed previously within the ICPSR catalog.  
   2. If the person or organization is in the [ICPSR Personal Name Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) or the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004), conform to the listed name form.
   3. If the person or organization is not available in an ICPSR authority list, consult [VIAF](https://viaf.org).  
-  4. If the person or organization does not have a VIAF record, consult another authoritative source, such as an organization's website, Google Scholar or a personal C.V. published on an institutional website.  
+  4. If the person or organization does not have a VIAF record, consult another authoritative source, such as an organization's website, Google Scholar, or a personal C.V. published on an institutional website.  
 
 ## Grammar
 
