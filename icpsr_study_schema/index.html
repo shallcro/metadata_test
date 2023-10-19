@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://icpsr.github.io/metadata/icpsr_study_schema/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Curated Study Metadata Schema - ICPSR Metadata Documentation Portal</title>
+    <title>ICPSR Curated Study Metadata Schema - ICPSR Metadata Documentation Portal</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Curated Study Metadata Schema";
+        var mkdocs_page_name = "ICPSR Curated Study Metadata Schema";
         var mkdocs_page_input_path = "icpsr_study_schema.md";
         var mkdocs_page_url = "/metadata/icpsr_study_schema/";
       </script>
@@ -47,7 +47,7 @@
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Curated Study Metadata Schema</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">ICPSR Curated Study Metadata Schema</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#metadata-elements-overview">Metadata Elements: Overview</a>
     </li>
@@ -217,11 +217,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../icpsr_style_guide/">Metadata Entry Style Guide</a>
+                <li class="toctree-l1"><a class="reference internal" href="../icpsr_style_guide/">ICPSR Metadata Style Guide</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../version_history/">Documentation Version History</a>
+                <li class="toctree-l1"><a class="reference internal" href="../version_history/">Documentation Portal Version History</a>
                 </li>
               </ul>
       </div>
@@ -240,7 +240,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="icpsr-curated-study-metadata-schema">ICPSR Curated Study Metadata Schema</h1>
-<p>Last updated: October 06, 2023</p>
+<p>Last updated: October 18, 2023</p>
 <p>This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.</p>
 <p>For a machine-actionable copy of this information, please see the <a href="https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json">JSON Schema version</a>.</p>
 <h2 id="metadata-elements-overview">Metadata Elements: Overview</h2>
@@ -742,19 +742,19 @@
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
 <p><strong>Controlled Vocabulary:</strong> The <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002">ICPSR Personal Names Authority List</a> and <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">Organization Names Authority List</a> are the primary authority control sources for PI names. The <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF) serves as a secondary resource if names are not present in ICPSR lists.</p>
-<p><strong>Usage Notes:</strong> When inputting names of both organizational and individual PIs, the following hierarchy of authority control sources should be used to make sure those names conform to best practices within the ICPSR and broader academic community:  </p>
+<p><strong>Usage Notes:</strong> When entering the name of an individual or organizational principal investigator (PI), the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:    </p>
 <ol>
-<li>If a PI already has published data with the ICPSR, conform to how their name has been displayed previously within our catalog.  </li>
-<li>If a PI is in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002">ICPSR Personal Names Authority List</a> or <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">Organization Names Authority List</a>, conform to ICPSR’s internal thesauri.  </li>
-<li>If the PI is not available in ICPSR Authority Control sources, look up the PI in VIAF.   </li>
-<li>If a principal investigator does not have a VIAF record, another source, such as Google Scholar or a C.V. published on their institution’s website, can be used to ensure their inputted name conforms to how their name is typically published.  </li>
+<li>If the person or organization has published data with ICPSR in the past, use the name as it has been displayed previously within the ICPSR catalog.    </li>
+<li>If the person or organization is in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002">ICPSR Personal Name Authority List</a> or the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a>, conform to the listed name form.  </li>
+<li>If the person or organization is not available in an ICPSR authority list, consult <a href="https://viaf.org">VIAF</a>.    </li>
+<li>If the person or organization does not have a VIAF record, consult another authoritative source, such as an organization's website, Google Scholar, or a personal C.V. published on an institutional website.    </li>
 </ol>
-<p>For names of people:   </p>
+<p>For the names of people:   </p>
 <ul>
 <li>The first name can include any middle names or initials; the Last name can include any suffixes (such as 'II' or 'Jr.'). If a first name includes only an inital, there is no space between first and middle initials.  </li>
 <li>Abbreviations are discouraged (especially 'et al.') but suffixes such as 'Sr.' and 'Jr.' are allowed.    </li>
 </ul>
-<p>For names of organizations:  </p>
+<p>For the names of organizations:  </p>
 <ul>
 <li>Include the full hierarchy of the organization, going from the highest level down to the most specific. Note that the higher level of the organization must be listed before the lower level, and levels should be separated by a period (e.g., 'University of Michigan. College of Literature, Science, and the Arts'). There is no period following the last level listed.  </li>
 <li>Abbreviations are discouraged, except 'Inc.' and 'Co.' In particular, governmental PI's are spelled out completely (e.g., 'United States Department of Commerce' rather than 'U.S. Dept. of Commerce').  </li>
@@ -779,12 +779,12 @@
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
 <p><strong>Controlled Vocabulary:</strong> The <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a> is the primary authority control source for PI Affiliations. The <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF) serves as a secondary resource if names are not present in the ICPSR list.</p>
-<p><strong>Usage Notes:</strong> The following steps should be taken to ensure that the entry of PI affiliation names conforms to best practices within ICPSR and the broader academic community:  </p>
+<p><strong>Usage Notes:</strong> When entering the name of a principal investigator's (PI's) affiliated organization, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:  </p>
 <ol>
-<li>If the PI already has published data with ICPSR, conform to how their affliation has been displayed previously within the ICPSR catalog.  </li>
-<li>If the PI’s affiliated organization is in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a>, use the form of the name as listed there.  </li>
-<li>If the affiliated organization is not available in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a>, consult the <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF).   </li>
-<li>If the affliated organization does not have a VIAF record, consult another authoritative source (such as the organization's website) to determine the appropriate name.  </li>
+<li>If the PI has published data with ICPSR in the past, use the name of the affiliated organization as it has been displayed previously within the ICPSR catalog.    </li>
+<li>If the affiliated organization is in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a>, conform to the listed name form.  </li>
+<li>If the affiliated organization is not available in an ICPSR authority list, consult <a href="https://viaf.org">VIAF</a>.    </li>
+<li>If the affiliated organization does not have a VIAF record, consult another authoritative source, such as the organization's website or Google Scholar.  </li>
 </ol>
 <p>Additional points regarding the names of organizations:  </p>
 <ul>
@@ -996,12 +996,12 @@
 <p><strong>Repeatable</strong>: No</p>
 <p><strong>Accepted Values</strong>: Text</p>
 <p><strong>Controlled Vocabulary:</strong> The <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a> is the primary authority control source for funding agencies. The <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF) serves as a secondary resource if names are not present in the ICPSR list.</p>
-<p><strong>Usage Notes:</strong> The following steps should be taken to make sure that the entry of funding agency names conforms to best practices within ICPSR and the broader academic community:  </p>
+<p><strong>Usage Notes:</strong> When entering the name of a funding agency, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:  </p>
 <ol>
-<li>If the funding agency has sponsored data with ICPSR in the past, conform to previously usage within the ICPSR catalog.  </li>
-<li>If the organization has not previously sponsored data but is in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a>, use the form of the name listed there.  </li>
-<li>If the funding agency is not available in the ICPSR Organizational Names Authority List, consult the <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF).   </li>
-<li>If the funding agency does not have a VIAF record, consult another authoritative source (such as an organizational website) to determine the appropriate name.  </li>
+<li>If the funding agency has sponsored archived data at ICPSR, use the name as it has been displayed previously within the ICPSR catalog.    </li>
+<li>If the funding agency is in the <a href="https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004">ICPSR Organization Names Authority List</a>, conform to the listed name form.  </li>
+<li>If the funding agency is not available in an ICPSR authority list, consult <a href="https://viaf.org">VIAF</a>.    </li>
+<li>If the funding agency does not have a VIAF record, consult another authoritative source, such as the organization's website or Google Scholar.  </li>
 </ol>
 <p><strong>ICPSR Input Guidance:</strong> The Principal Investigator's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.</p>
 <p><strong>Examples:</strong> </p>
