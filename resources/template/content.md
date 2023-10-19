@@ -47,7 +47,7 @@
 
 {% set curator_notes = keys.get("icpsrGuidance") %}
 {% if curator_notes %}
-    {{- "**ICPSR Input Guidance:** " -}} 
+    {{- "**TEST Input Guidance:** " -}} 
     {{- curator_notes.literal }}
 {% endif %}
 

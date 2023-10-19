@@ -1,4 +1,4 @@
-name: Update ICPSR Markdown
+name: Update TEST Markdown
 
 on:
   push:

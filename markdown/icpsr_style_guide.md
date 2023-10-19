@@ -1,34 +1,34 @@
-# ICPSR Metadata Style Guide
+# TEST Metadata Style Guide
 
-These guidelines outline current ICPSR style, grammar, and general usage conventions for writing and editing metadata records.  
+These guidelines outline current TEST style, grammar, and general usage conventions for writing and editing metadata records.  
 
 ## Completeness
 
-Provide complete and self-explanatory information for as many metadata elements as possible. Complete metadata significantly improves data discoverability. While we rely on depositors to supply as much metadata as possible upon deposit, metadata can be augmented and improved by ICPSR curators with the help of the data and documentation.  
+Provide complete and self-explanatory information for as many metadata elements as possible. Complete metadata significantly improves data discoverability. While we rely on depositors to supply as much metadata as possible upon deposit, metadata can be augmented and improved by TEST curators with the help of the data and documentation.  
 
 ## URLs
 
-Full Uniform Resource Locators (URLs) should not be spelled out in the metadata record when referring to an online resource; instead, hyperlink the descriptive text, as this is friendlier to screen readers and web scrapers. For example, use "more information is available at the [ICPSR website](https://www.icpsr.umich.edu/)" rather than "more information is available at the ICPSR website: https://www.icpsr.umich.edu/".  
+Full Uniform Resource Locators (URLs) should not be spelled out in the metadata record when referring to an online resource; instead, hyperlink the descriptive text, as this is friendlier to screen readers and web scrapers. For example, use "more information is available at the [TEST website](https://www.icpsr.umich.edu/)" rather than "more information is available at the TEST website: https://www.icpsr.umich.edu/".  
 
 *Note:* formal citations (e.g., in Data Source or, with extreme rarity, Collection Notes elements) are an important exception to this rule; the URL (preferably a persistent identifier, like a Digital Object Identifier) should always be included for the cited resource.  
 
-## Referencing ICPSR Data Collections
+## Referencing TEST Data Collections
 
-When referencing ICPSR data collections within metadata records, use the ICPSR identifier preceded by "ICPSR," hyperlinked using the study Digital Object Identifier (DOI). For example, "This collection continues the work of [ICPSR 3577](https://doi.org/10.3886/ICPSR03577)."  
+When referencing TEST data collections within metadata records, use the TEST identifier preceded by "TEST," hyperlinked using the study Digital Object Identifier (DOI). For example, "This collection continues the work of [TEST 3577](https://doi.org/10.3886/TEST03577)."  
 
-Unless referencing a specific version of an ICPSR data collection, use the unversioned DOI (e.g., https://doi.org/10.3886/ICPSR06425 rather than https://doi.org/10.3886/ICPSR06425.v1) since the unversioned DOI resolves to the latest version of an archived ICPSR data collection.  
+Unless referencing a specific version of an TEST data collection, use the unversioned DOI (e.g., https://doi.org/10.3886/TEST06425 rather than https://doi.org/10.3886/TEST06425.v1) since the unversioned DOI resolves to the latest version of an archived TEST data collection.  
 
 ## Authority Control
 
-The [ICPSR Personal Name Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) and the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) are the primary authority control sources for names in ICPSR metadata records.  
+The [TEST Personal Name Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) and the [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) are the primary authority control sources for names in TEST metadata records.  
 
-If names are not present in ICPSR lists, the [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource. VIAF is a name authority service that links multiple national authority files (i.e., catalogs of authoritative names such as the [Library of Congress Name Authority File](https://id.loc.gov/authorities/names.html)) into a single international resource. Once the record for an entity is found in VIAF, click on the link next to the American flag to access the Library of Congress entry and use the name in the 100 field (for personal names) or 110 field (for organizational names) of the record. If there are only foreign catalog entries, use of those are acceptable.  
+If names are not present in TEST lists, the [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource. VIAF is a name authority service that links multiple national authority files (i.e., catalogs of authoritative names such as the [Library of Congress Name Authority File](https://id.loc.gov/authorities/names.html)) into a single international resource. Once the record for an entity is found in VIAF, click on the link next to the American flag to access the Library of Congress entry and use the name in the 100 field (for personal names) or 110 field (for organizational names) of the record. If there are only foreign catalog entries, use of those are acceptable.  
 
-When entering the name of a person or organization, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:  
+When entering the name of a person or organization, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within TEST and the broader academic community:  
 
-  1. If the person or organization has published/distributed/sponsored data for ICPSR in the past, use the name as it has been displayed previously within the ICPSR catalog.  
-  2. If the person or organization is in the [ICPSR Personal Name Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) or the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004), conform to the listed name form.
-  3. If the person or organization is not available in an ICPSR authority list, consult [VIAF](https://viaf.org).  
+  1. If the person or organization has published/distributed/sponsored data for TEST in the past, use the name as it has been displayed previously within the TEST catalog.  
+  2. If the person or organization is in the [TEST Personal Name Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) or the [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004), conform to the listed name form.
+  3. If the person or organization is not available in an TEST authority list, consult [VIAF](https://viaf.org).  
   4. If the person or organization does not have a VIAF record, consult another authoritative source, such as an organization's website, Google Scholar, or a personal C.V. published on an institutional website.  
 
 ## Grammar

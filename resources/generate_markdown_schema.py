@@ -385,7 +385,7 @@ def main():
                 elif description_value in line:
                     processed_lines = check_write(line, fo, processed_lines, index)
                     processed_lines = check_write('\n', fo, processed_lines, index+1)
-                    check_write('For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json).\n\n## Metadata Elements: Overview\n\n', fo, processed_lines)
+                    check_write('For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/TEST/metadata/blob/main/schema/icpsr_study_schema.json).\n\n## Metadata Elements: Overview\n\n', fo, processed_lines)
 
                 #check to see if this is the second 'example' in a given section--if so, change the heading so that it's clear this is a full example with all subfields 
                 elif line.startswith('**Examples:**'):

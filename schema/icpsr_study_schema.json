@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://schemas.icpsr.umich.edu/schema/icpsr_study_schema?version=v1",
-  "title": "ICPSR Curated Study Metadata Schema",
-  "description": "This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.",
+  "title": "TEST Curated Study Metadata Schema",
+  "description": "This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (TEST). These rules and definitions represent TEST's metadata practices and are intended to (a) assist TEST staff with metadata entry and (b) inform TEST depositors of necessary information to improve the discoverability of their data collections.",
   "type": "object",
   "required": [ "title", "principal_investigator", "version", "version_date", "distributor", "summary", "subject_term", "time_period", "geographic_coverage_area" ],
   "additionalProperties": false,
@@ -15,19 +15,19 @@
       "examples": [ 1, 2 ]
     },
     "version_date": {
-      "description": "The date on which the current version of the data collection was released by ICPSR.",
+      "description": "The date on which the current version of the data collection was released by TEST.",
       "type": "string",
       "format": "date",
       "controlledVocab": "N/A",
-      "usageNotes": "ICPSR automatically generates this date for data collection additions and updates. For metadata-only updates, the date remains unchanged.",
+      "usageNotes": "TEST automatically generates this date for data collection additions and updates. For metadata-only updates, the date remains unchanged.",
       "examples": [ "2006-03-30", "2019-05-05" ]
     },
     "original_release_date": {
-      "description": "The date on which the data collection was originally released by ICPSR.",
+      "description": "The date on which the data collection was originally released by TEST.",
       "type": "string",
       "format": "date",
       "controlledVocab": "N/A",
-      "usageNotes": "ICPSR automatically generates the release date.",
+      "usageNotes": "TEST automatically generates the release date.",
       "examples": [ "2001-02-07", "2020-08-12" ]
     },
     "title": {
@@ -59,14 +59,14 @@
       ]
     },
     "link_title": {
-      "description": "The title of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.",
+      "description": "The title of the item being linked to. Restricted to TEST 'union catalog' records – i.e., external resources to which TEST links as a courtesy.",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "Always appears with the Link URL.",
       "examples": [ "Cebu Longitudinal Health and Nutrition Survey" ]
     },
     "link_url": {
-      "description": "The URL of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.",
+      "description": "The URL of the item being linked to. Restricted to TEST 'union catalog' records – i.e., external resources to which TEST links as a courtesy.",
       "type": "string",
       "controlledVocab": "N/A",
       "usageNotes": "Always appears with the Link Title.",
@@ -82,7 +82,7 @@
           "name": {
             "description": "The name of the entity primarily responsible for the data collection.",
             "type": "string",
-            "controlledVocab": "The [ICPSR Personal Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) and [Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) are the primary authority control sources for PI names. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in ICPSR lists.",
+            "controlledVocab": "The [TEST Personal Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) and [Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) are the primary authority control sources for PI names. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in TEST lists.",
             "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/pi_name?version=v1",
             "examples": [              
               "James A. McCann",
@@ -94,9 +94,9 @@
             ]
           },
           "affiliation": {
-            "description": "The organization with which an individual PI was affiliated at the time of a data collection's deposit at ICPSR.",
+            "description": "The organization with which an individual PI was affiliated at the time of a data collection's deposit at TEST.",
             "type": "string",
-            "controlledVocab": "The [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) is the primary authority control source for PI Affiliations. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the ICPSR list.",
+            "controlledVocab": "The [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) is the primary authority control source for PI Affiliations. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the TEST list.",
             "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/pi_affiliation?version=v1",
             "examples": [
               "University of Michigan",
@@ -106,7 +106,7 @@
             ]
           },
           "order": {
-            "description": "The order of importance for the PIs associated with the data collection -- typically provided to ICPSR by the lead PI.",
+            "description": "The order of importance for the PIs associated with the data collection -- typically provided to TEST by the lead PI.",
             "type": "integer",
             "controlledVocab": "N/A",
             "usageNotes": "A value of '1' indicates the primary PI, '2' the second, and so forth.",
@@ -145,8 +145,8 @@
       "controlledVocab": "N/A",
       "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/citation?version=v1",
       "examples": [
-        ["University of Michigan. Survey Research Center. Economic Behavior Program. Survey of Consumer Attitudes and Behavior, September 2018. Inter-university Consortium for Political and Social Research [distributor], 2021-11-18. https://doi.org/10.3886/ICPSR38121.v1"],
-        ["Goldin, Claudia, and Lawrence Katz. The 1915 Iowa State Census Project. ICPSR28501-v1. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2010-12-14. http://doi.org/10.3886/ICPSR28501.v1"]
+        ["University of Michigan. Survey Research Center. Economic Behavior Program. Survey of Consumer Attitudes and Behavior, September 2018. Inter-university Consortium for Political and Social Research [distributor], 2021-11-18. https://doi.org/10.3886/TEST38121.v1"],
+        ["Goldin, Claudia, and Lawrence Katz. The 1915 Iowa State Census Project. TEST28501-v1. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2010-12-14. http://doi.org/10.3886/TEST28501.v1"]
       ]
     },
     "distributor": {
@@ -158,7 +158,7 @@
           "name": {
             "description": "The name of the organization(s) responsible for distributing the data collection.",
             "type": "string",
-            "controlledVocab": "[ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004)",
+            "controlledVocab": "[TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004)",
             "examples": [
               "Inter-university Consortium for Political and Social Research",
               "Roper Center for Public Opinion Research"
@@ -201,8 +201,8 @@
       "type": "string",
       "format": "uri",
       "controlledVocab": "N/A",
-      "usageNotes": "The DOI (digital object identifier) is a persistent identifier provided by DataCite, a DOI registration agency. The DOI name is divided into three parts, separated by slashes ('/'): 'https://doi.org' is the HTTP URL link; followed by '10.3886', a globally unique number that identifies ICPSR as the registrant within the DOI namespace; followed by 'ICPSR', the ICPSR study number, and then the version number. The study number is automatically generated by ICPSR and is unique. Current study numbers are five digits, though four digit numbers were once standard and are still acceptable. Studies with fewer than five digits will have zeroes prepended in the DOI (e.g., '10.3886/ICPSR02760).",
-      "examples": [ "https://doi.org/10.3886/ICPSR03025.v2", "https://doi.org/10.3886/ICPSR06425.v1" ]
+      "usageNotes": "The DOI (digital object identifier) is a persistent identifier provided by DataCite, a DOI registration agency. The DOI name is divided into three parts, separated by slashes ('/'): 'https://doi.org' is the HTTP URL link; followed by '10.3886', a globally unique number that identifies TEST as the registrant within the DOI namespace; followed by 'TEST', the TEST study number, and then the version number. The study number is automatically generated by TEST and is unique. Current study numbers are five digits, though four digit numbers were once standard and are still acceptable. Studies with fewer than five digits will have zeroes prepended in the DOI (e.g., '10.3886/TEST02760).",
+      "examples": [ "https://doi.org/10.3886/TEST03025.v2", "https://doi.org/10.3886/TEST06425.v1" ]
     },
     "funding_source": {
       "description": "Information about funding that supported the data collection.",
@@ -213,7 +213,7 @@
           "agency": {
             "description": "The name of the organization that supported the production and/or archiving of the data collection.",
             "type": "string",
-            "controlledVocab": "The [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) is the primary authority control source for funding agencies. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the ICPSR list.",
+            "controlledVocab": "The [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) is the primary authority control source for funding agencies. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the TEST list.",
             "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/funding_agency?version=v1",
             "icpsrGuidance": "The Principal Investigator's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.",
             "examples": [
@@ -244,7 +244,7 @@
               "enum": ["collection and/or analysis of data", "secondary analysis of data", "archiving of data"]
             },
             "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/funding_purpose?version=v1",
-            "icpsrGuidance": "This is an internal ICPSR element that is not publicly displayed.",
+            "icpsrGuidance": "This is an internal TEST element that is not publicly displayed.",
             "examples": [
               ["collection and/or analysis of data", "secondary analysis of data"],
               ["archiving of data"]
@@ -292,7 +292,7 @@
         "type": "string"
       },
       "controlledVocab": "N/A",
-      "icpsrGuidance": "This is an internal ICPSR element that is not publicly displayed.",
+      "icpsrGuidance": "This is an internal TEST element that is not publicly displayed.",
       "examples": [ 
         ["BJS:271"],
         ["PSC:12345"]
@@ -315,9 +315,9 @@
         "type": "string"
       },
       "minItems": 1,
-      "controlledVocab": "The [ICPSR Subject Thesaurus](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10001) and the [ICPSR Personal Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) are preferred sources.",
-      "usageNotes": "The [Library of Congress Subject Terms](https://authorities.loc.gov) is referenced when adding new terms to the ICPSR Subject Thesaurus.",
-      "icpsrGuidance": "Non-thesaurus terms can be submitted in the metadata editor and will be reviewed by the metadata librarian. If an ICPSR staff member submits a non-thesaurus term, the metadata librarian will gauge the necessity of this term, check it against the Library of Congress Subject Headings to see if a different related term should be used, and consider it for addition to the ICPSR thesaurus.",
+      "controlledVocab": "The [TEST Subject Thesaurus](https://www.icpsr.umich.edu/web/TEST/thesaurus/10001) and the [TEST Personal Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) are preferred sources.",
+      "usageNotes": "The [Library of Congress Subject Terms](https://authorities.loc.gov) is referenced when adding new terms to the TEST Subject Thesaurus.",
+      "icpsrGuidance": "Non-thesaurus terms can be submitted in the metadata editor and will be reviewed by the metadata librarian. If an TEST staff member submits a non-thesaurus term, the metadata librarian will gauge the necessity of this term, check it against the Library of Congress Subject Headings to see if a different related term should be used, and consider it for addition to the TEST thesaurus.",
       "examples": [
         ["child care"],
         ["Social Security", "crime", "victimization"],
@@ -331,7 +331,7 @@
         "type": "string"
       },
       "minItems": 1,
-      "controlledVocab": "[ICPSR Geographic Names Thesaurus](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10003).",
+      "controlledVocab": "[TEST Geographic Names Thesaurus](https://www.icpsr.umich.edu/web/TEST/thesaurus/10003).",
       "$ref": "https://schemas.icpsr.umich.edu/schema/yaml/geographic_coverage_area?version=v1",
       "icpsrGuidance": "The metadata editor will automatically put this element's values in alphabetical order, regardless of hierarchy.",
       "examples": [
@@ -644,7 +644,7 @@
       ]
     },
     "extent_of_processing": {
-      "description": "Describes processing activities and checks performed on data collections by ICPSR curation staff.",
+      "description": "Describes processing activities and checks performed on data collections by TEST curation staff.",
       "icpsrGuidance": "This element is displayed to end-users in version history.",
       "type": "array",
       "items": {
@@ -735,9 +735,9 @@
       "description": "Information regarding any limitations on use or restrictions on access to the file(s).",
       "type": "string",
       "controlledVocab": "N/A",
-      "usageNotes": "Restrictions informs users that access to certain variables in a collection may be limited, and that they should contact ICPSR directly to inquire about accessing them.",
+      "usageNotes": "Restrictions informs users that access to certain variables in a collection may be limited, and that they should contact TEST directly to inquire about accessing them.",
       "examples": [
-        "These data may not be used for any purpose other than statistical reporting and analysis. Use of these data to learn the identity of any person or establishment is strictly prohibited. To protect respondent privacy, certain files within this data collection are restricted from general dissemination. To obtain these files, researchers must agree to the terms and conditions of a Restricted Data Use Agreement in accordance with existing ICPSR servicing policies."
+        "These data may not be used for any purpose other than statistical reporting and analysis. Use of these data to learn the identity of any person or establishment is strictly prohibited. To protect respondent privacy, certain files within this data collection are restricted from general dissemination. To obtain these files, researchers must agree to the terms and conditions of a Restricted Data Use Agreement in accordance with existing TEST servicing policies."
       ]
     },
     "changes_to_collection": {
@@ -748,7 +748,7 @@
         "type": "object",
         "properties": {
           "date": {
-            "description": "The date on which an update occurred. ICPSR automatically generates this date.",
+            "description": "The date on which an update occurred. TEST automatically generates this date.",
             "type": "string",
             "format": "date",
             "examples": [ "2006-03-30", "2019-05-05" ]
@@ -781,10 +781,10 @@
       ]
     },
     "series": {
-      "description": "An ICPSR series is a named collection of related studies.",
+      "description": "An TEST series is a named collection of related studies.",
       "type": "string",
-      "controlledVocab": "[ICPSR Series](https://www.icpsr.umich.edu/web/ICPSR/search/series)",
-      "usageNotes": "Typically the studies in an ICPSR series are produced by the same group of investigators, and either explore different facets of the same topic, or repeat the same investigation over time. Each series name is given in title case (all major words are capitalized, while minor words are lowercased) and ends with the word 'Series'.",
+      "controlledVocab": "[TEST Series](https://www.icpsr.umich.edu/web/TEST/search/series)",
+      "usageNotes": "Typically the studies in an TEST series are produced by the same group of investigators, and either explore different facets of the same topic, or repeat the same investigation over time. Each series name is given in title case (all major words are capitalized, while minor words are lowercased) and ends with the word 'Series'.",
       "examples": [
         ["American National Election Study (ANES) Series"],
         ["Census of Population and Housing, 1990 [United States] Series"],
@@ -793,20 +793,20 @@
       ]
     },
     "classification": {
-      "description": "ICPSR classifications address topics broadly, and are meant to be a good starting point for exploring the collection.",
+      "description": "TEST classifications address topics broadly, and are meant to be a good starting point for exploring the collection.",
       "type": "array",
       "items": {
         "type": "string"
       },
-      "controlledVocab": "[ICPSR Topic Classifications](https://www.icpsr.umich.edu/web/pages/ICPSR/access/subject.html)",
-      "icpsrGuidance": "When there are multiple subclassifications, the smallest (most detailed) one is chosen to represent the data collection. Each data collection must have at least one ICPSR classification, as well as a classification from the collection's home archive. Classifications can also be used to cross-list a study among multiple archives. Curators should choose the topical classifications that best match the study's focus.",
+      "controlledVocab": "[TEST Topic Classifications](https://www.icpsr.umich.edu/web/pages/TEST/access/subject.html)",
+      "icpsrGuidance": "When there are multiple subclassifications, the smallest (most detailed) one is chosen to represent the data collection. Each data collection must have at least one TEST classification, as well as a classification from the collection's home archive. Classifications can also be used to cross-list a study among multiple archives. Curators should choose the topical classifications that best match the study's focus.",
       "examples": [
         ["I.A.2. Census Enumerations: Historical and Contemporary Population Characteristics, United States, American Housing Survey Series"],
         ["XVII.C.1. Social Institutions and Behavior, Socialization, Students, and Youth, United States"]
       ]
     },
     "filesets": {
-      "description": " Identifies the grouping of files in a data collection. Every ICPSR data collection with at least one file must have at least one defined Fileset.",
+      "description": " Identifies the grouping of files in a data collection. Every TEST data collection with at least one file must have at least one defined Fileset.",
       "type": "array",
       "controlledVocab": "N/A",
       "items": {
@@ -815,7 +815,7 @@
           "number": {
             "description": "A number that uniquely identifies a 'part' or component file that is associated with the data collection.",
             "type": "integer",
-            "usageNotes": "Fileset numbers are typically (but not always) consecutive integers beginning with 1. (In some cases, the number may be drawn from an external resource, such as FIPS state and county codes.) The numbers correspond to the 'part numbers' embedded in ICPSR standard filenames.",
+            "usageNotes": "Fileset numbers are typically (but not always) consecutive integers beginning with 1. (In some cases, the number may be drawn from an external resource, such as FIPS state and county codes.) The numbers correspond to the 'part numbers' embedded in TEST standard filenames.",
             "examples": [1, 2, 3]
           },
           "name": {
@@ -840,7 +840,7 @@
         "dependentRequired": { "name": ["number"] },
         "additionalProperties": false
       },
-      "usageNotes": "Filesets are used at ICPSR to make a convenient package for description, discovery, preservation and dissemination -- a package that is smaller than the data collection but larger than the individual file. A fileset typically contains a single file of statistical data plus additional files that support the data -- such as setups for statistical software, documentation, and alternative data representations. A data collection may have multiple filesets. Each Fileset has a Number, and may also have a Name and an SDA (Survey Documentation and Analysis) Note.",
+      "usageNotes": "Filesets are used at TEST to make a convenient package for description, discovery, preservation and dissemination -- a package that is smaller than the data collection but larger than the individual file. A fileset typically contains a single file of statistical data plus additional files that support the data -- such as setups for statistical software, documentation, and alternative data representations. A data collection may have multiple filesets. Each Fileset has a Number, and may also have a Name and an SDA (Survey Documentation and Analysis) Note.",
       "examples": [
         [
           {
