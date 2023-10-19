@@ -1,17 +1,17 @@
-site_name: ICPSR Metadata Documentation Portal
+site_name: TEST Metadata Documentation Portal
 site_url: https://icpsr.github.io/metadata/
 docs_dir: ../markdown
 site_dir: ../site
 nav:
   - Home: index.md
-  - ICPSR Curated Study Metadata Schema: icpsr_study_schema.md
-  - ICPSR Metadata Style Guide: icpsr_style_guide.md
+  - TEST Curated Study Metadata Schema: icpsr_study_schema.md
+  - TEST Metadata Style Guide: icpsr_style_guide.md
   - Documentation Portal Version History: version_history.md
 theme:
   name: readthedocs
   custom_dir: custom_theme/
   prev_next_buttons_location: none
-  logo: ./assets/ICPSR_logo_rgb_white-01.png
+  logo: ./assets/TEST_logo_rgb_white-01.png
   navigation_depth: 5
   sticky_navigation: true
 extra_css: 

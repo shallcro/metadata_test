@@ -1,22 +1,22 @@
-# ICPSR Curated Study Metadata Schema
+# TEST Curated Study Metadata Schema
 
-Last updated: October 18, 2023
+Last updated: October 19, 2023
 
-This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (ICPSR). These rules and definitions represent ICPSR's metadata practices and are intended to (a) assist ICPSR staff with metadata entry and (b) inform ICPSR depositors of necessary information to improve the discoverability of their data collections.
+This is the metadata schema for curated studies at the Inter-university Consortium for Political and Social Research (TEST). These rules and definitions represent TEST's metadata practices and are intended to (a) assist TEST staff with metadata entry and (b) inform TEST depositors of necessary information to improve the discoverability of their data collections.
 
-For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/ICPSR/metadata/blob/main/schema/icpsr_study_schema.json).
+For a machine-actionable copy of this information, please see the [JSON Schema version](https://github.com/TEST/metadata/blob/main/schema/icpsr_study_schema.json).
 
 ## Metadata Elements: Overview
 
 | Property                                               | Required? | Repeatable? | Accepted Values           | Description                                                                                                                                                                                                                                                                                                                                                                    |
 | ------------------------------------------------------ | --------- | ----------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Version](#version )                                   | Yes       | No          | Number                    | The current version number for the data collection.                                                                                                                                                                                                                                                                                                                            |
-| [Version Date](#version_date )                         | Yes       | No          | Text                      | The date on which the current version of the data collection was released by ICPSR.                                                                                                                                                                                                                                                                                            |
-| [Original Release Date](#original_release_date )       | No        | No          | Text                      | The date on which the data collection was originally released by ICPSR.                                                                                                                                                                                                                                                                                                        |
+| [Version Date](#version_date )                         | Yes       | No          | Text                      | The date on which the current version of the data collection was released by TEST.                                                                                                                                                                                                                                                                                             |
+| [Original Release Date](#original_release_date )       | No        | No          | Text                      | The date on which the data collection was originally released by TEST.                                                                                                                                                                                                                                                                                                         |
 | [Title](#title )                                       | Yes       | No          | Text                      | The authoritative title of the data collection. A full title should include a descriptive string that captures what the data collection contains as well as the geographic scope of and the time period covered by the data collection.                                                                                                                                        |
 | [Alternate Title](#alternate_title )                   | No        | Yes         | Text                      | Alternate name(s) or acronym(s) commonly used to refer to the data collection.                                                                                                                                                                                                                                                                                                 |
-| [Link Title](#link_title )                             | No        | No          | Text                      | The title of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.                                                                                                                                                                                                                              |
-| [Link Url](#link_url )                                 | No        | No          | Text                      | The URL of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.                                                                                                                                                                                                                                |
+| [Link Title](#link_title )                             | No        | No          | Text                      | The title of the item being linked to. Restricted to TEST 'union catalog' records – i.e., external resources to which TEST links as a courtesy.                                                                                                                                                                                                                                |
+| [Link Url](#link_url )                                 | No        | No          | Text                      | The URL of the item being linked to. Restricted to TEST 'union catalog' records – i.e., external resources to which TEST links as a courtesy.                                                                                                                                                                                                                                  |
 | [Principal Investigator](#principal_investigator )     | Yes       | Yes         | Multi-part; see subfields           | The entity or entities responsible for the data collection, presented in order of importance. A Principal Investigator (PI) may be a person or an organization. Each data collection requires at least one PI.                                                                                                                                                                 |
 | [Citation](#citation )                                 | No        | No          | Text                      | The established bibliographic reference for the data collection.                                                                                                                                                                                                                                                                                                               |
 | [Distributor](#distributor )                           | Yes       | Yes         | Multi-part; see subfields           | The organization(s) responsible for distributing the data collection. Values include both the name and the location of the Distributor(s).                                                                                                                                                                                                                                     |
@@ -38,7 +38,7 @@ For a machine-actionable copy of this information, please see the [JSON Schema v
 | [Time Method](#time_method )                           | No        | Yes         | Text                      | The time dimension in which the data were collected and framed.                                                                                                                                                                                                                                                                                                                |
 | [Data Source](#data_source )                           | No        | Yes         | Text                      | The source(s) of the data, when that source is external to the data collection and can be independently cited.                                                                                                                                                                                                                                                                 |
 | [Collection Mode](#collection_mode )                   | No        | Yes         | Text                      | The procedure(s), technique(s), or mode(s) of inquiry used to collect the data.                                                                                                                                                                                                                                                                                                |
-| [Extent of Processing](#extent_of_processing )         | No        | Yes         | Text                      | Describes processing activities and checks performed on data collections by ICPSR curation staff.                                                                                                                                                                                                                                                                              |
+| [Extent of Processing](#extent_of_processing )         | No        | Yes         | Text                      | Describes processing activities and checks performed on data collections by TEST curation staff.                                                                                                                                                                                                                                                                               |
 | [Weight](#weight )                                     | No        | No          | Text                      | A description of the weight variables and the criteria for using them in analyzing the data. May included other information about how the data is weighted even if no weight variables are available.                                                                                                                                                                          |
 | [Response Rates](#response_rates )                     | No        | No          | Text                      | The percentage of respondents in the sample who participated in the data collection.                                                                                                                                                                                                                                                                                           |
 | [Scale](#scale )                                       | No        | No          | Text                      | Any commonly known scale used to collect data for the data collection (e.g., psychological scales such as MMPI and CPI, or occupational scales such as the Census Occupational Codes).                                                                                                                                                                                         |
@@ -46,13 +46,13 @@ For a machine-actionable copy of this information, please see the [JSON Schema v
 | [Smallest Geographic Unit](#smallest_geographic_unit ) | No        | No          | Text                      | The smallest geographic unit used in the dataset.                                                                                                                                                                                                                                                                                                                              |
 | [Restrictions](#restrictions )                         | No        | No          | Text                      | Information regarding any limitations on use or restrictions on access to the file(s).                                                                                                                                                                                                                                                                                         |
 | [Changes to Collection](#changes_to_collection )       | No        | Yes         | Multi-part; see subfields           | A summary description of changes that have been made to the data collection since its last release.                                                                                                                                                                                                                                                                            |
-| [Series](#series )                                     | No        | No          | Text                      | An ICPSR series is a named collection of related studies.                                                                                                                                                                                                                                                                                                                      |
-| [Classification](#classification )                     | No        | Yes         | Text                      | ICPSR classifications address topics broadly, and are meant to be a good starting point for exploring the collection.                                                                                                                                                                                                                                                          |
-| [Filesets](#filesets )                                 | No        | Yes         | Multi-part; see subfields           |  Identifies the grouping of files in a data collection. Every ICPSR data collection with at least one file must have at least one defined Fileset.                                                                                                                                                                                                                             |
+| [Series](#series )                                     | No        | No          | Text                      | An TEST series is a named collection of related studies.                                                                                                                                                                                                                                                                                                                       |
+| [Classification](#classification )                     | No        | Yes         | Text                      | TEST classifications address topics broadly, and are meant to be a good starting point for exploring the collection.                                                                                                                                                                                                                                                           |
+| [Filesets](#filesets )                                 | No        | Yes         | Multi-part; see subfields           |  Identifies the grouping of files in a data collection. Every TEST data collection with at least one file must have at least one defined Fileset.                                                                                                                                                                                                                              |
 
 ## Key for Metadata Element Entries
 
-Full information for each ICPSR study metadata element includes the following fields:
+Full information for each TEST study metadata element includes the following fields:
 
 - **Description:** A short description of the metadata element and the information it is intended to convey.
 - **Required:** Indicates whether the metadata element is mandatory ("Yes") or optional ("No"). Required elements must include at least one value.
@@ -60,7 +60,7 @@ Full information for each ICPSR study metadata element includes the following fi
 - **Accepted values:** The type of values that may be used with the metadata element; options include text (with additional requirements, such as date formatting, noted when present) and numbers. Multi-part metadata elements have accepted value information provided in entries for individual subelements.
 - **Controlled Vocabulary:** Indicates the specific controlled vocabulary (i.e., a set of standardized terms) that must be used to provide values for the metadata element ('N/A' indicates no controlled vocabulary is required). 
 - **Usage Notes:** Additional information about the nature, scope, and conventions for values that may be added to the metadata element.  
-- **ICPSR Input Guidance:** Information for ICPSR staff related to using internal tools and resources to create and input metadata values. These notes are made available to the general ICPSR community for transparency.  
+- **TEST Input Guidance:** Information for TEST staff related to using internal tools and resources to create and input metadata values. These notes are made available to the general TEST community for transparency.  
 - **Examples:** Examples of valid values for the metadata element.
  
 ## Metadata Elements: Detailed Information
@@ -97,7 +97,7 @@ Metadata-only updates to the data collection do not increment the version number
 
 ### <a name="version_date"></a>2. Version Date         
 
-**Description:** The date on which the current version of the data collection was released by ICPSR.
+**Description:** The date on which the current version of the data collection was released by TEST.
 
 **Required**: Yes
 
@@ -107,7 +107,7 @@ Metadata-only updates to the data collection do not increment the version number
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** ICPSR automatically generates this date for data collection additions and updates. For metadata-only updates, the date remains unchanged.
+**Usage Notes:** TEST automatically generates this date for data collection additions and updates. For metadata-only updates, the date remains unchanged.
 
 **Examples:** 
 
@@ -121,7 +121,7 @@ Metadata-only updates to the data collection do not increment the version number
 
 ### <a name="original_release_date"></a>3. Original Release Date         
 
-**Description:** The date on which the data collection was originally released by ICPSR.
+**Description:** The date on which the data collection was originally released by TEST.
 
 **Required**: No
 
@@ -131,7 +131,7 @@ Metadata-only updates to the data collection do not increment the version number
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** ICPSR automatically generates the release date.
+**Usage Notes:** TEST automatically generates the release date.
 
 **Examples:** 
 
@@ -163,9 +163,9 @@ Title Proper:
 
   * The title proper uses title case: all major words are capitalized, while minor words are lowercased.  
 
-  * For new studies, ICPSR starts with the title proper provided by the data depositor. Most title propers are straightforward about their contents, such as the 'American Community Survey' or the 'Census of Law Enforcement Training Academies.' Some title propers include a more branded description, such as 'Bridge of Faith: Aim4Peace Community-Based Violence Prevention Project or Contents' and 'Contexts of Cyberbullying: An Epidemiologic Study using Electronic Detection and Social Network Analysis.'  
+  * For new studies, TEST starts with the title proper provided by the data depositor. Most title propers are straightforward about their contents, such as the 'American Community Survey' or the 'Census of Law Enforcement Training Academies.' Some title propers include a more branded description, such as 'Bridge of Faith: Aim4Peace Community-Based Violence Prevention Project or Contents' and 'Contexts of Cyberbullying: An Epidemiologic Study using Electronic Detection and Social Network Analysis.'  
 
-  * For updated studies, ICPSR uses the existing title in production, making changes as necessary to add new years or additional geographical locations. For studies that are part of an ICPSR series, titles remain consistent with the previous series studies.  
+  * For updated studies, TEST uses the existing title in production, making changes as necessary to add new years or additional geographical locations. For studies that are part of an TEST series, titles remain consistent with the previous series studies.  
 
 Geography:  
 
@@ -187,7 +187,7 @@ Time Period:
 
   * For most studies, a single year or range of years is acceptable. Years are written as four digits, including when used in a range (e.g., '1999', '2001-2003', or '1999, 2010, 2015').  
 
-  * Months are included only when part of ICPSR series that have multiple releases, which are otherwise identical, each year. In these cases, months are spelled out (e.g., 'September 2020' instead of '9/2020' or 'Sept. 2020').  
+  * Months are included only when part of TEST series that have multiple releases, which are otherwise identical, each year. In these cases, months are spelled out (e.g., 'September 2020' instead of '9/2020' or 'Sept. 2020').  
 
 **Examples:** 
 
@@ -253,7 +253,7 @@ Time Period:
 
 ### <a name="link_title"></a>6. Link Title         
 
-**Description:** The title of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.
+**Description:** The title of the item being linked to. Restricted to TEST 'union catalog' records – i.e., external resources to which TEST links as a courtesy.
 
 **Required**: No
 
@@ -273,7 +273,7 @@ Time Period:
 
 ### <a name="link_url"></a>7. Link Url         
 
-**Description:** The URL of the item being linked to. Restricted to ICPSR 'union catalog' records – i.e., external resources to which ICPSR links as a courtesy.
+**Description:** The URL of the item being linked to. Restricted to TEST 'union catalog' records – i.e., external resources to which TEST links as a courtesy.
 
 **Required**: No
 
@@ -305,11 +305,11 @@ Time Period:
 
 #### <a name="autogenerated_heading_3"></a>8.1. Subfields:
 
-| Property                                                  | Required? | Repeatable? | Accepted Values | Description                                                                                                            |
-| --------------------------------------------------------- | --------- | ----------- | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [Name](#principal_investigator_items_name )               | Yes       | No          | Text            | The name of the entity primarily responsible for the data collection.                                                  |
-| [Affiliation](#principal_investigator_items_affiliation ) | No        | No          | Text            | The organization with which an individual PI was affiliated at the time of a data collection's deposit at ICPSR.       |
-| [Order](#principal_investigator_items_order )             | Yes       | No          | Number          | The order of importance for the PIs associated with the data collection -- typically provided to ICPSR by the lead PI. |
+| Property                                                  | Required? | Repeatable? | Accepted Values | Description                                                                                                           |
+| --------------------------------------------------------- | --------- | ----------- | --------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [Name](#principal_investigator_items_name )               | Yes       | No          | Text            | The name of the entity primarily responsible for the data collection.                                                 |
+| [Affiliation](#principal_investigator_items_affiliation ) | No        | No          | Text            | The organization with which an individual PI was affiliated at the time of a data collection's deposit at TEST.       |
+| [Order](#principal_investigator_items_order )             | Yes       | No          | Number          | The order of importance for the PIs associated with the data collection -- typically provided to TEST by the lead PI. |
 
 ##### <a name="principal_investigator_items_name"></a>8.1.1. Name
 
@@ -321,13 +321,13 @@ Time Period:
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** The [ICPSR Personal Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) and [Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) are the primary authority control sources for PI names. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in ICPSR lists.
+**Controlled Vocabulary:** The [TEST Personal Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) and [Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) are the primary authority control sources for PI names. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in TEST lists.
 
-**Usage Notes:** When entering the name of an individual or organizational principal investigator (PI), the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:    
+**Usage Notes:** When entering the name of an individual or organizational principal investigator (PI), the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within TEST and the broader academic community:    
 
-  1. If the person or organization has published data with ICPSR in the past, use the name as it has been displayed previously within the ICPSR catalog.    
-  2. If the person or organization is in the [ICPSR Personal Name Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) or the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004), conform to the listed name form.  
-  3. If the person or organization is not available in an ICPSR authority list, consult [VIAF](https://viaf.org).    
+  1. If the person or organization has published data with TEST in the past, use the name as it has been displayed previously within the TEST catalog.    
+  2. If the person or organization is in the [TEST Personal Name Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) or the [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004), conform to the listed name form.  
+  3. If the person or organization is not available in an TEST authority list, consult [VIAF](https://viaf.org).    
   4. If the person or organization does not have a VIAF record, consult another authoritative source, such as an organization's website, Google Scholar, or a personal C.V. published on an institutional website.    
 
 For the names of people:   
@@ -369,7 +369,7 @@ For the names of organizations:
 
 ##### <a name="principal_investigator_items_affiliation"></a>8.1.2. Affiliation
 
-**Description:** The organization with which an individual PI was affiliated at the time of a data collection's deposit at ICPSR.
+**Description:** The organization with which an individual PI was affiliated at the time of a data collection's deposit at TEST.
 
 **Required**: No
 
@@ -377,13 +377,13 @@ For the names of organizations:
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** The [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) is the primary authority control source for PI Affiliations. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the ICPSR list.
+**Controlled Vocabulary:** The [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) is the primary authority control source for PI Affiliations. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the TEST list.
 
-**Usage Notes:** When entering the name of a principal investigator's (PI's) affiliated organization, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:  
+**Usage Notes:** When entering the name of a principal investigator's (PI's) affiliated organization, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within TEST and the broader academic community:  
 
-   1. If the PI has published data with ICPSR in the past, use the name of the affiliated organization as it has been displayed previously within the ICPSR catalog.    
-   2. If the affiliated organization is in the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004), conform to the listed name form.  
-   3. If the affiliated organization is not available in an ICPSR authority list, consult [VIAF](https://viaf.org).    
+   1. If the PI has published data with TEST in the past, use the name of the affiliated organization as it has been displayed previously within the TEST catalog.    
+   2. If the affiliated organization is in the [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004), conform to the listed name form.  
+   3. If the affiliated organization is not available in an TEST authority list, consult [VIAF](https://viaf.org).    
    4. If the affiliated organization does not have a VIAF record, consult another authoritative source, such as the organization's website or Google Scholar.  
 
 Additional points regarding the names of organizations:  
@@ -413,7 +413,7 @@ Additional points regarding the names of organizations:
 
 ##### <a name="principal_investigator_items_order"></a>8.1.3. Order
 
-**Description:** The order of importance for the PIs associated with the data collection -- typically provided to ICPSR by the lead PI.
+**Description:** The order of importance for the PIs associated with the data collection -- typically provided to TEST by the lead PI.
 
 **Required**: Yes
 
@@ -476,7 +476,7 @@ Additional points regarding the names of organizations:
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** The Citation is dynamically assembled from other entry elements in this format: Principal-Investigator-list. Study-Title. Distributor-list, Version-Date. DOI. ICPSR 'union catalog' records – i.e., external resource to which ICPSR links as a courtesy – do not have citations generated.  
+**Usage Notes:** The Citation is dynamically assembled from other entry elements in this format: Principal-Investigator-list. Study-Title. Distributor-list, Version-Date. DOI. TEST 'union catalog' records – i.e., external resource to which TEST links as a courtesy – do not have citations generated.  
 
 For additional information about how DOIs for citations are generated, see the Digital Object Identifier element usage notes.  
 
@@ -484,13 +484,13 @@ For additional information about how DOIs for citations are generated, see the D
 
 ```json
 [
-    "University of Michigan. Survey Research Center. Economic Behavior Program. Survey of Consumer Attitudes and Behavior, September 2018. Inter-university Consortium for Political and Social Research [distributor], 2021-11-18. https://doi.org/10.3886/ICPSR38121.v1"
+    "University of Michigan. Survey Research Center. Economic Behavior Program. Survey of Consumer Attitudes and Behavior, September 2018. Inter-university Consortium for Political and Social Research [distributor], 2021-11-18. https://doi.org/10.3886/TEST38121.v1"
 ]
 ```
 
 ```json
 [
-    "Goldin, Claudia, and Lawrence Katz. The 1915 Iowa State Census Project. ICPSR28501-v1. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2010-12-14. http://doi.org/10.3886/ICPSR28501.v1"
+    "Goldin, Claudia, and Lawrence Katz. The 1915 Iowa State Census Project. TEST28501-v1. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2010-12-14. http://doi.org/10.3886/TEST28501.v1"
 ]
 ```
 
@@ -504,9 +504,9 @@ For additional information about how DOIs for citations are generated, see the D
 
 **Accepted Values**: Multi-part element; see subfield definitions for more information.
 
-**ICPSR Input Guidance:** Most data collections list ICPSR as the distributor. As such, the  full name and location of ICPSR are easily accessible in the metadata editor.
+**TEST Input Guidance:** Most data collections list TEST as the distributor. As such, the  full name and location of TEST are easily accessible in the metadata editor.
 
-If a non-ICPSR distributor is necessary, please confirm the standards with the Metadata Librarian. Please note that external distributors are often appropriate for Union Catalog entries and metadata-only releases.
+If a non-TEST distributor is necessary, please confirm the standards with the Metadata Librarian. Please note that external distributors are often appropriate for Union Catalog entries and metadata-only releases.
 
 #### <a name="autogenerated_heading_4"></a>10.1. Subfields:
 
@@ -525,7 +525,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004)
+**Controlled Vocabulary:** [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004)
 
 **Examples:** 
 
@@ -596,16 +596,16 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** The DOI (digital object identifier) is a persistent identifier provided by DataCite, a DOI registration agency. The DOI name is divided into three parts, separated by slashes ('/'): 'https://doi.org' is the HTTP URL link; followed by '10.3886', a globally unique number that identifies ICPSR as the registrant within the DOI namespace; followed by 'ICPSR', the ICPSR study number, and then the version number. The study number is automatically generated by ICPSR and is unique. Current study numbers are five digits, though four digit numbers were once standard and are still acceptable. Studies with fewer than five digits will have zeroes prepended in the DOI (e.g., '10.3886/ICPSR02760).
+**Usage Notes:** The DOI (digital object identifier) is a persistent identifier provided by DataCite, a DOI registration agency. The DOI name is divided into three parts, separated by slashes ('/'): 'https://doi.org' is the HTTP URL link; followed by '10.3886', a globally unique number that identifies TEST as the registrant within the DOI namespace; followed by 'TEST', the TEST study number, and then the version number. The study number is automatically generated by TEST and is unique. Current study numbers are five digits, though four digit numbers were once standard and are still acceptable. Studies with fewer than five digits will have zeroes prepended in the DOI (e.g., '10.3886/TEST02760).
 
 **Examples:** 
 
 ```json
-"https://doi.org/10.3886/ICPSR03025.v2"
+"https://doi.org/10.3886/TEST03025.v2"
 ```
 
 ```json
-"https://doi.org/10.3886/ICPSR06425.v1"
+"https://doi.org/10.3886/TEST06425.v1"
 ```
 
 ### <a name="funding_source"></a>12. Funding Source         
@@ -637,16 +637,16 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** The [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004) is the primary authority control source for funding agencies. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the ICPSR list.
+**Controlled Vocabulary:** The [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004) is the primary authority control source for funding agencies. The [Virtual International Authority File](https://viaf.org/) (VIAF) serves as a secondary resource if names are not present in the TEST list.
 
-**Usage Notes:** When entering the name of a funding agency, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within ICPSR and the broader academic community:  
+**Usage Notes:** When entering the name of a funding agency, the following hierarchy of authority control sources should be used to make sure the name conforms to best practices within TEST and the broader academic community:  
 
-  1. If the funding agency has sponsored archived data at ICPSR, use the name as it has been displayed previously within the ICPSR catalog.    
-  2. If the funding agency is in the [ICPSR Organization Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10004), conform to the listed name form.  
-  3. If the funding agency is not available in an ICPSR authority list, consult [VIAF](https://viaf.org).    
+  1. If the funding agency has sponsored archived data at TEST, use the name as it has been displayed previously within the TEST catalog.    
+  2. If the funding agency is in the [TEST Organization Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10004), conform to the listed name form.  
+  3. If the funding agency is not available in an TEST authority list, consult [VIAF](https://viaf.org).    
   4. If the funding agency does not have a VIAF record, consult another authoritative source, such as the organization's website or Google Scholar.  
 
-**ICPSR Input Guidance:** The Principal Investigator's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.
+**TEST Input Guidance:** The Principal Investigator's home institution does not need to be listed as a funding agency unless the PI provides a grant number (or other award information) or makes a specific request.
 
 **Examples:** 
 
@@ -707,7 +707,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** Local ICPSR controlled vocabulary. See below for terms and definitions:
+**Controlled Vocabulary:** Local TEST controlled vocabulary. See below for terms and definitions:
 
 | *Term* | *Definition* |
 |----------|---------------|
@@ -715,7 +715,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 | secondary analysis of data | The funder supported secondary analysis performed on the data. |
 | archiving of data | The funder supported the archiving and preservation of the data. |
 
-**ICPSR Input Guidance:** This is an internal ICPSR element that is not publicly displayed.
+**TEST Input Guidance:** This is an internal TEST element that is not publicly displayed.
 
 **Examples:** 
 
@@ -805,7 +805,7 @@ If a non-ICPSR distributor is necessary, please confirm the standards with the M
 
 **Controlled Vocabulary:** N/A
 
-**ICPSR Input Guidance:** This is an internal ICPSR element that is not publicly displayed.
+**TEST Input Guidance:** This is an internal TEST element that is not publicly displayed.
 
 **Examples:** 
 
@@ -859,11 +859,11 @@ The Summary is written in the third person and avoids attempting to address issu
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** The [ICPSR Subject Thesaurus](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10001) and the [ICPSR Personal Names Authority List](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10002) are preferred sources.
+**Controlled Vocabulary:** The [TEST Subject Thesaurus](https://www.icpsr.umich.edu/web/TEST/thesaurus/10001) and the [TEST Personal Names Authority List](https://www.icpsr.umich.edu/web/TEST/thesaurus/10002) are preferred sources.
 
-**Usage Notes:** The [Library of Congress Subject Terms](https://authorities.loc.gov) is referenced when adding new terms to the ICPSR Subject Thesaurus.
+**Usage Notes:** The [Library of Congress Subject Terms](https://authorities.loc.gov) is referenced when adding new terms to the TEST Subject Thesaurus.
 
-**ICPSR Input Guidance:** Non-thesaurus terms can be submitted in the metadata editor and will be reviewed by the metadata librarian. If an ICPSR staff member submits a non-thesaurus term, the metadata librarian will gauge the necessity of this term, check it against the Library of Congress Subject Headings to see if a different related term should be used, and consider it for addition to the ICPSR thesaurus.
+**TEST Input Guidance:** Non-thesaurus terms can be submitted in the metadata editor and will be reviewed by the metadata librarian. If an TEST staff member submits a non-thesaurus term, the metadata librarian will gauge the necessity of this term, check it against the Library of Congress Subject Headings to see if a different related term should be used, and consider it for addition to the TEST thesaurus.
 
 **Examples:** 
 
@@ -898,7 +898,7 @@ The Summary is written in the third person and avoids attempting to address issu
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** [ICPSR Geographic Names Thesaurus](https://www.icpsr.umich.edu/web/ICPSR/thesaurus/10003).
+**Controlled Vocabulary:** [TEST Geographic Names Thesaurus](https://www.icpsr.umich.edu/web/TEST/thesaurus/10003).
 
 **Usage Notes:**   
 Each geographic term's full hierarchy must be included; please note:   
@@ -910,7 +910,7 @@ Each geographic term's full hierarchy must be included; please note:
 
 The [Getty Thesaurus of Geographic Names](http://www.getty.edu/research/tools/vocabularies/tgn/index.html) is referenced when introducing new geographic names.  
 
-**ICPSR Input Guidance:** The metadata editor will automatically put this element's values in alphabetical order, regardless of hierarchy.
+**TEST Input Guidance:** The metadata editor will automatically put this element's values in alphabetical order, regardless of hierarchy.
 
 **Examples:** 
 
@@ -1192,7 +1192,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** Local ICPSR controlled vocabulary. See below for terms and definitions:
+**Controlled Vocabulary:** Local TEST controlled vocabulary. See below for terms and definitions:
 
 | *Term* | *Definition* |
 |----------|---------------|
@@ -1312,7 +1312,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Usage Notes:** The Study Design provides more detailed information than the Summary, including how surveys were prepared and administered, how interviews were conducted, or how the data were obtained and compiled, as well as information about deadlines and follow-ups to respondents.  
 
-**ICPSR Input Guidance:** It is acceptable to summarize information contained in study documentation and point users to that study documentation for more details. If the Summary already contains text that would be appropriate in Study Design, it is acceptable to duplicate that text.
+**TEST Input Guidance:** It is acceptable to summarize information contained in study documentation and point users to that study documentation for more details. If the Summary already contains text that would be appropriate in Study Design, it is acceptable to duplicate that text.
 
 **Example:** 
 
@@ -1477,7 +1477,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** Local ICPSR controlled vocabulary. See below for terms and definitions:
+**Controlled Vocabulary:** Local TEST controlled vocabulary. See below for terms and definitions:
 
 | *Term* | *Definition* |
 |----------|---------------|
@@ -1519,7 +1519,7 @@ The textual description should not simply restate the time period in words. For 
 
 ### <a name="extent_of_processing"></a>29. Extent of Processing         
 
-**Description:** Describes processing activities and checks performed on data collections by ICPSR curation staff.
+**Description:** Describes processing activities and checks performed on data collections by TEST curation staff.
 
 **Required**: No
 
@@ -1527,18 +1527,18 @@ The textual description should not simply restate the time period in words. For 
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** Local ICPSR controlled vocabulary. See below for terms and definitions:
+**Controlled Vocabulary:** Local TEST controlled vocabulary. See below for terms and definitions:
 
 | *Term* | *Definition* |
 |----------|---------------|
-| Checked for undocumented or out-of-date codes | Selected if the ICPSR curator checked at least half of the variables in the data collection for wild codes and corrected or reported in the codebook any wild codes discovered by these checks. |
-| Created online analysis version with question text | Selected if the ICPSR curator created online analysis version with question text. |
-| Created variable labels and/or value labels | Selected if the ICPSR curator created variable labels and/or value labels. |
-| Performed consistency checks | Selected if the ICPSR curator performed any of the following consistency checks on at least half of the variables in the data collection and corrected or reported in the codebook any inconsistencies discovered by these checks:<br> &nbsp; &nbsp;- Checked to see that skip patterns in questionnaires were followed correctly.  <br> &nbsp; &nbsp;- Checked the logical consistency of response patterns across variables. |
-| Performed recodes and/or calculated derived variables | Selected if the ICPSR curator recoded at least one original variable in the data collection and/or produced at least one new variable derived from one or more original variables. The following kinds of recodes DO NOT qualify for this task:<br> &nbsp; &nbsp;- Recodes performed for reasons of confidentiality. This type of recoding may be mentioned in other sections of the metadata description, usually in Restrictions or Collection Notes.  <br> &nbsp; &nbsp;- Recodes performed to correct errors uncovered by consistency checks.  <br> &nbsp; &nbsp;- Recodes performed to correct errors uncovered by checks for undocumented codes.  <br> &nbsp; &nbsp;- Recodes performed by standardized missing data codes.  <br> &nbsp; &nbsp;- When a unique record identifier is created that is not derived from an original variable. |
-| Standardized missing values | Selected if the ICPSR curator standardized missing values for at least half of the variables in the data collection. Standardization of missing values means that all 'missing' responses are coded according to a fixed set of rules. There are various ways in which this standardization is typically applied:  <br>&nbsp;&nbsp;- In some data collections, each kind of 'missing response' may be assigned the same code across all variables, e.g., 'inapplicable' cases may be coded -1 for all variables, 'don't know' may be coded -2, and 'no answer' may be coded -3.  <br>&nbsp;&nbsp;- In other instances, standards may be specific to the type of variable involved, e.g., blanks may denote missing data for all alphabetic variables, codes -1, -2, and -3 may denote missing data for all dummy variables, and codes 7, 8, and 9 may represent missing data for all other variables.  <br>&nbsp;&nbsp;- In yet other instances, standard codes may depend on the column width of each variable, e.g., 99 may denote 'no answer' for all two column variables and 999 may denote the same for all three column variables. |
+| Checked for undocumented or out-of-date codes | Selected if the TEST curator checked at least half of the variables in the data collection for wild codes and corrected or reported in the codebook any wild codes discovered by these checks. |
+| Created online analysis version with question text | Selected if the TEST curator created online analysis version with question text. |
+| Created variable labels and/or value labels | Selected if the TEST curator created variable labels and/or value labels. |
+| Performed consistency checks | Selected if the TEST curator performed any of the following consistency checks on at least half of the variables in the data collection and corrected or reported in the codebook any inconsistencies discovered by these checks:<br> &nbsp; &nbsp;- Checked to see that skip patterns in questionnaires were followed correctly.  <br> &nbsp; &nbsp;- Checked the logical consistency of response patterns across variables. |
+| Performed recodes and/or calculated derived variables | Selected if the TEST curator recoded at least one original variable in the data collection and/or produced at least one new variable derived from one or more original variables. The following kinds of recodes DO NOT qualify for this task:<br> &nbsp; &nbsp;- Recodes performed for reasons of confidentiality. This type of recoding may be mentioned in other sections of the metadata description, usually in Restrictions or Collection Notes.  <br> &nbsp; &nbsp;- Recodes performed to correct errors uncovered by consistency checks.  <br> &nbsp; &nbsp;- Recodes performed to correct errors uncovered by checks for undocumented codes.  <br> &nbsp; &nbsp;- Recodes performed by standardized missing data codes.  <br> &nbsp; &nbsp;- When a unique record identifier is created that is not derived from an original variable. |
+| Standardized missing values | Selected if the TEST curator standardized missing values for at least half of the variables in the data collection. Standardization of missing values means that all 'missing' responses are coded according to a fixed set of rules. There are various ways in which this standardization is typically applied:  <br>&nbsp;&nbsp;- In some data collections, each kind of 'missing response' may be assigned the same code across all variables, e.g., 'inapplicable' cases may be coded -1 for all variables, 'don't know' may be coded -2, and 'no answer' may be coded -3.  <br>&nbsp;&nbsp;- In other instances, standards may be specific to the type of variable involved, e.g., blanks may denote missing data for all alphabetic variables, codes -1, -2, and -3 may denote missing data for all dummy variables, and codes 7, 8, and 9 may represent missing data for all other variables.  <br>&nbsp;&nbsp;- In yet other instances, standard codes may depend on the column width of each variable, e.g., 99 may denote 'no answer' for all two column variables and 999 may denote the same for all three column variables. |
 
-**ICPSR Input Guidance:** This element is displayed to end-users in version history.
+**TEST Input Guidance:** This element is displayed to end-users in version history.
 
 **Examples:** 
 
@@ -1570,7 +1570,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Usage Notes:** Weight includes any information about weighting variables in the data, as well as any other weight information provided by the Principal Investigator. If a weighting formula or coefficient was developed, provide this formula, define its elements, and indicate how the formula is applied to the data. It is acceptable to summarize information contained in documentation and refer users to that documentation for more information.
 
-**ICPSR Input Guidance:** For National Institute of Justice (NIJ) studies, 'Not applicable.' should be used if no information is available. For all other archives, this element is optional.
+**TEST Input Guidance:** For National Institute of Justice (NIJ) studies, 'Not applicable.' should be used if no information is available. For all other archives, this element is optional.
 
 **Examples:** 
 
@@ -1600,7 +1600,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Usage Notes:** Only applicable if the data were collected with a survey instrument and the response rates are provided.
 
-**ICPSR Input Guidance:** For National Institute of Justice (NIJ) studies, the phrase 'Not available' is used when no information is available and the phrase 'Not applicable' is used if Response Rates does not apply. For all other archives this element is optional.
+**TEST Input Guidance:** For National Institute of Justice (NIJ) studies, the phrase 'Not available' is used when no information is available and the phrase 'Not applicable' is used if Response Rates does not apply. For all other archives this element is optional.
 
 **Examples:** 
 
@@ -1630,7 +1630,7 @@ The textual description should not simply restate the time period in words. For 
 
 **Usage Notes:** The inclusion of a common scale should be identified in the documentation associated with this dataset and confirmed by variable names or labels. The scales can be cited either as a list or described in full sentences. If the questionnaire used has a finite list of responses (e.g., 'Always, Sometimes, Rarely, Never' or Strongly Agree, Agree, Disagree, Strongly Disagree'), it is acceptable for this element to note 'A Likert-type scale was used,' or 'Several Likert-type scales were used.' However, it is not required to note Likart-type scales in situations where only such scales were used, given their ubiquity.  
 
-**ICPSR Input Guidance:** For National Institute of Justice (NIJ) studies, if there is no indication that scales are used, enter 'None' in this element. For all other archives, this element is optional.
+**TEST Input Guidance:** For National Institute of Justice (NIJ) studies, if there is no indication that scales are used, enter 'None' in this element. For all other archives, this element is optional.
 
 **Examples:** 
 
@@ -1700,7 +1700,7 @@ If the data do not include a geographic variable by which the data can be analyz
 
 This element is only meant to convey specific, known, geography. If there is a variable indicating which testing site a survey was taken at, but the locations of the testing sites were masked by the PI, this element is likely not indicated.
 
-**ICPSR Input Guidance:** For National Institute of Justice (NIJ) studies, enter 'None' if no geographic variables are present. For all other archives, this element is optional.
+**TEST Input Guidance:** For National Institute of Justice (NIJ) studies, enter 'None' if no geographic variables are present. For all other archives, this element is optional.
 
 **Examples:** 
 
@@ -1728,12 +1728,12 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** Restrictions informs users that access to certain variables in a collection may be limited, and that they should contact ICPSR directly to inquire about accessing them.
+**Usage Notes:** Restrictions informs users that access to certain variables in a collection may be limited, and that they should contact TEST directly to inquire about accessing them.
 
 **Example:** 
 
 ```json
-"These data may not be used for any purpose other than statistical reporting and analysis. Use of these data to learn the identity of any person or establishment is strictly prohibited. To protect respondent privacy, certain files within this data collection are restricted from general dissemination. To obtain these files, researchers must agree to the terms and conditions of a Restricted Data Use Agreement in accordance with existing ICPSR servicing policies."
+"These data may not be used for any purpose other than statistical reporting and analysis. Use of these data to learn the identity of any person or establishment is strictly prohibited. To protect respondent privacy, certain files within this data collection are restricted from general dissemination. To obtain these files, researchers must agree to the terms and conditions of a Restricted Data Use Agreement in accordance with existing TEST servicing policies."
 ```
 
 ### <a name="changes_to_collection"></a>36. Changes to Collection         
@@ -1752,14 +1752,14 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 #### <a name="autogenerated_heading_20"></a>36.1. Subfields:
 
-| Property                                   | Required? | Repeatable? | Accepted Values | Description                                                                    |
-| ------------------------------------------ | --------- | ----------- | --------------- | ------------------------------------------------------------------------------ |
-| [Date](#changes_to_collection_items_date ) | No        | No          | Text            | The date on which an update occurred. ICPSR automatically generates this date. |
-| [Note](#changes_to_collection_items_note ) | No        | No          | Text            | An explanation of the nature of the update.                                    |
+| Property                                   | Required? | Repeatable? | Accepted Values | Description                                                                   |
+| ------------------------------------------ | --------- | ----------- | --------------- | ----------------------------------------------------------------------------- |
+| [Date](#changes_to_collection_items_date ) | No        | No          | Text            | The date on which an update occurred. TEST automatically generates this date. |
+| [Note](#changes_to_collection_items_note ) | No        | No          | Text            | An explanation of the nature of the update.                                   |
 
 ##### <a name="changes_to_collection_items_date"></a>36.1.1. Date
 
-**Description:** The date on which an update occurred. ICPSR automatically generates this date.
+**Description:** The date on which an update occurred. TEST automatically generates this date.
 
 **Required**: No
 
@@ -1822,7 +1822,7 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 ### <a name="series"></a>37. Series         
 
-**Description:** An ICPSR series is a named collection of related studies.
+**Description:** An TEST series is a named collection of related studies.
 
 **Required**: No
 
@@ -1830,9 +1830,9 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** [ICPSR Series](https://www.icpsr.umich.edu/web/ICPSR/search/series)
+**Controlled Vocabulary:** [TEST Series](https://www.icpsr.umich.edu/web/TEST/search/series)
 
-**Usage Notes:** Typically the studies in an ICPSR series are produced by the same group of investigators, and either explore different facets of the same topic, or repeat the same investigation over time. Each series name is given in title case (all major words are capitalized, while minor words are lowercased) and ends with the word 'Series'.
+**Usage Notes:** Typically the studies in an TEST series are produced by the same group of investigators, and either explore different facets of the same topic, or repeat the same investigation over time. Each series name is given in title case (all major words are capitalized, while minor words are lowercased) and ends with the word 'Series'.
 
 **Examples:** 
 
@@ -1862,7 +1862,7 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 ### <a name="classification"></a>38. Classification         
 
-**Description:** ICPSR classifications address topics broadly, and are meant to be a good starting point for exploring the collection.
+**Description:** TEST classifications address topics broadly, and are meant to be a good starting point for exploring the collection.
 
 **Required**: No
 
@@ -1870,9 +1870,9 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 **Accepted Values**: Text
 
-**Controlled Vocabulary:** [ICPSR Topic Classifications](https://www.icpsr.umich.edu/web/pages/ICPSR/access/subject.html)
+**Controlled Vocabulary:** [TEST Topic Classifications](https://www.icpsr.umich.edu/web/pages/TEST/access/subject.html)
 
-**ICPSR Input Guidance:** When there are multiple subclassifications, the smallest (most detailed) one is chosen to represent the data collection. Each data collection must have at least one ICPSR classification, as well as a classification from the collection's home archive. Classifications can also be used to cross-list a study among multiple archives. Curators should choose the topical classifications that best match the study's focus.
+**TEST Input Guidance:** When there are multiple subclassifications, the smallest (most detailed) one is chosen to represent the data collection. Each data collection must have at least one TEST classification, as well as a classification from the collection's home archive. Classifications can also be used to cross-list a study among multiple archives. Curators should choose the topical classifications that best match the study's focus.
 
 **Examples:** 
 
@@ -1890,7 +1890,7 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 ### <a name="filesets"></a>39. Filesets         
 
-**Description:**  Identifies the grouping of files in a data collection. Every ICPSR data collection with at least one file must have at least one defined Fileset.
+**Description:**  Identifies the grouping of files in a data collection. Every TEST data collection with at least one file must have at least one defined Fileset.
 
 **Required**: No
 
@@ -1900,7 +1900,7 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 **Controlled Vocabulary:** N/A
 
-**Usage Notes:** Filesets are used at ICPSR to make a convenient package for description, discovery, preservation and dissemination -- a package that is smaller than the data collection but larger than the individual file. A fileset typically contains a single file of statistical data plus additional files that support the data -- such as setups for statistical software, documentation, and alternative data representations. A data collection may have multiple filesets. Each Fileset has a Number, and may also have a Name and an SDA (Survey Documentation and Analysis) Note.
+**Usage Notes:** Filesets are used at TEST to make a convenient package for description, discovery, preservation and dissemination -- a package that is smaller than the data collection but larger than the individual file. A fileset typically contains a single file of statistical data plus additional files that support the data -- such as setups for statistical software, documentation, and alternative data representations. A data collection may have multiple filesets. Each Fileset has a Number, and may also have a Name and an SDA (Survey Documentation and Analysis) Note.
 
 #### <a name="autogenerated_heading_22"></a>39.1. Subfields:
 
@@ -1920,7 +1920,7 @@ This element is only meant to convey specific, known, geography. If there is a v
 
 **Accepted Values**: Number
 
-**Usage Notes:** Fileset numbers are typically (but not always) consecutive integers beginning with 1. (In some cases, the number may be drawn from an external resource, such as FIPS state and county codes.) The numbers correspond to the 'part numbers' embedded in ICPSR standard filenames.
+**Usage Notes:** Fileset numbers are typically (but not always) consecutive integers beginning with 1. (In some cases, the number may be drawn from an external resource, such as FIPS state and county codes.) The numbers correspond to the 'part numbers' embedded in TEST standard filenames.
 
 **Examples:** 
 
