@@ -4,4 +4,4 @@ Metadata are essential for maximizing the usefulness of data. Because it is ofte
 
 The [Inter-university Consortium for Political and Social Research](https://www.icpsr.umich.edu/web/pages/) (TEST) creates metadata using information supplied by data depositors and other sources.  All metadata records are reviewed and approved by Metadata & Preservation unit archivists, who check for adherence to standards and advise on all metadata-related activities during the data curation lifecycle.
 
-This portal provides information about how to use and apply TEST metadata.
+This portal provides information about how to use and apply TEST metadata. AND THIS IS A TEST, TOO!
